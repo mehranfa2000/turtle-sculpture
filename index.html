@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لاک‌پشت منقار عقابی | نماد حیات‌وحش بوشهر</title>
+    <meta name="description" content="Hawksbill Sea Turtle – Wildlife Symbol of Bushehr Province, Persian Gulf">
+
+    <!-- فونت‌ها از Google Fonts (رایگان) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&family=Lalezar&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --ocean-deep: #0A3D62;
+            --ocean-mid: #1B6CA8;
+            --ocean-light: #3498DB;
+            --teal: #008B8B;
+            --teal-light: #20B2AA;
+            --sand: #F5E6CA;
+            --sand-light: #FFF8F0;
+            --coral: #E17055;
+            --white: #FFFFFF;
+            --gray-50: #F9FAFB;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-300: #D1D5DB;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gray-800: #1F2937;
+            --gray-900: #111827;
+            --font-fa: 'Vazirmatn', 'Tahoma', sans-serif;
+            --font-fa-display: 'Lalezar', 'Vazirmatn', sans-serif;
+            --font-en: 'Inter', 'Segoe UI', sans-serif;
+            --font-en-display: 'Playfair Display', 'Georgia', serif;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --shadow-xl: 0 24px 60px rgba(0,0,0,0.15);
+        }
+
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--font-fa);
+            background: var(--gray-50);
+            color: var(--gray-800);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ===== Language Toggle ===== */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 50px;
+            padding: 4px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-200);
+        }
+        .lang-btn {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: transparent;
+            color: var(--gray-500);
+            font-family: var(--font-en);
+        }
+        .lang-btn.active {
+            background: var(--ocean-deep);
+            color: white;
+            box-shadow: 0 2px 8px rgba(10,61,98,0.3);
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            max-height: 900px;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* اگر عکسی ندارید، gradient نمایش داده می‌شود */
+        }
+        .hero-fallback {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0A3D62 0%, #1B6CA8 30%, #20B2AA 60%, #3498DB 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-fallback .emoji { font-size: 180px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3)); }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 61, 98, 0.1) 0%,
+                rgba(10, 61, 98, 0.2) 40%,
+                rgba(10, 61, 98, 0.7) 75%,
+                rgba(10, 61, 98, 0.92) 100%
+            );
+        }
+        .hero-content {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding: 60px 40px 50px;
+            color: white;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: #E74C3C;
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+        .hero-title-fa {
+            font-family: var(--font-fa-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.3;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        .hero-title-en {
+            font-family: var(--font-en-display);
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 400;
+            font-style: italic;
+            opacity: 0.85;
+            margin-bottom: 6px;
+            direction: ltr;
+            text-align: right;
+        }
+        .hero-scientific {
+            font-family: var(--font-en-display);
+            font-style: italic;
+            font-size: 1rem;
+            opacity: 0.6;
+            direction: ltr;
+            text-align: right;
+        }
+        .scroll-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.75rem;
+            animation: bounce 2s infinite;
+        }
+        .scroll-hint svg { width: 24px; height: 24px; }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-8px); }
+            60% { transform: translateX(-50%) translateY(-4px); }
+        }
+
+        /* ===== Main Content Container ===== */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== Stats Bar ===== */
+        .stats-bar {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            margin: -40px auto 50px;
+            max-width: 820px;
+            padding: 0;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            border: 1px solid var(--gray-100);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .stat-item {
+            padding: 28px 16px;
+            text-align: center;
+            border-left: 1px solid var(--gray-100);
+            transition: background 0.3s;
+        }
+        .stat-item:last-child { border-left: none; }
+        .stat-item:hover { background: var(--gray-50); }
+        .stat-number {
+            font-family: var(--font-en);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--ocean-deep);
+            line-height: 1;
+            margin-bottom: 6px;
+            direction: ltr;
+        }
+        .stat-number span {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--teal);
+        }
+        .stat-label {
+            font-size: 0.78rem;
+            color: var(--gray-500);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* ===== Section Styles ===== */
+        .section {
+            padding: 50px 0;
+        }
+        .section-header {
+            margin-bottom: 30px;
+        }
+        .section-overline {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--teal);
+            margin-bottom: 8px;
+            font-family: var(--font-en);
+        }
+        .section-title {
+            font-family: var(--font-fa-display);
+            font-size: 1.8rem;
+            color: var(--gray-900);
+            margin-bottom: 4px;
+        }
+        .section-title-en {
+            font-family: var(--font-en-display);
+            font-size: 1.1rem;
+            color: var(--gray-400);
+            font-style: italic;
+            direction: ltr;
+            text-align: right;
+        }
+
+        /* ===== Content Cards ===== */
+        .content-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            transition: box-shadow 0.3s;
+        }
+        .content-card:hover { box-shadow: var(--shadow-md); }
+
+        /* بخش دوزبانه */
+        .bilingual-block { margin-bottom: 28px; }
+        .text-fa {
+            font-family: var(--font-fa);
+            font-size: 1rem;
+            line-height: 2;
+            color: var(--gray-700);
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+        .text-en {
+            font-family: var(--font-en);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--gray-500);
+            text-align: justify;
+            direction: ltr;
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: var(--radius-md);
+            border-right: 3px solid var(--teal-light);
+        }
+        .lang-label {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .lang-label.fa { background: #EBF5FB; color: var(--ocean-mid); }
+        .lang-label.en { background: #E8F8F5; color: var(--teal); }
+
+        /* ===== IUCN Status Badge ===== */
+        .iucn-banner {
+            background: linear-gradient(135deg, #C0392B, #E74C3C);
+            border-radius: var(--radius-lg);
+            padding: 28px 36px;
+            margin-bottom: 24px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 8px 24px rgba(192,57,43,0.25);
+        }
+        .iucn-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+        .iucn-text h3 {
+            font-family: var(--font-fa);
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+        .iucn-text p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        .iucn-en {
+            font-family: var(--font-en);
+            font-size: 0.8rem;
+            opacity: 0.75;
+            direction: ltr;
+            margin-top: 4px;
+        }
+
+        /* ===== Gallery ===== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover::after { opacity: 1; }
+        .gallery-item.featured {
+            grid-column: span 2;
+            grid-row: span 2;
+            aspect-ratio: auto;
+        }
+
+        /* ===== Infographic Section ===== */
+        .infographic-wrapper {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+            text-align: center;
+        }
+        .infographic-wrapper img {
+            max-width: 100%;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+        .infographic-caption {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        /* ===== Info Blocks (Habitat, Threats, etc.) ===== */
+        .info-blocks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .info-block {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--gray-100);
+            transition: all 0.3s;
+        }
+        .info-block:hover {
+            border-color: var(--teal-light);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        .info-block-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+        .info-block-icon.habitat { background: #E8F8F5; }
+        .info-block-icon.threat { background: #FDEDEC; }
+        .info-block-icon.role { background: #EBF5FB; }
+        .info-block-icon.protect { background: #F9EBEA; }
+        .info-block h4 {
+            font-family: var(--font-fa);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 8px;
+        }
+        .info-block p {
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+        .info-block .en-text {
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            direction: ltr;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--gray-100);
+        }
+
+        /* ===== Timeline ===== */
+        .timeline {
+            position: relative;
+            padding-right: 40px;
+            margin-bottom: 24px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--teal-light), var(--ocean-deep));
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 32px;
+            padding: 20px 24px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--gray-100);
+            box-shadow: var(--shadow-sm);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -33px;
+            top: 24px;
+            width: 12px;
+            height: 12px;
+            background: var(--teal);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 2px var(--teal-light);
+        }
+        .timeline-year {
+            font-family: var(--font-en);
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--teal);
+            margin-bottom: 6px;
+        }
+        .timeline-item h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 6px;
+        }
+        .timeline-item p {
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+
+        /* ===== Footer ===== */
+        .site-footer {
+            background: var(--ocean-deep);
+            color: rgba(255,255,255,0.7);
+            padding: 50px 24px 30px;
+            margin-top: 60px;
+        }
+        .footer-content {
+            max-width: 820px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .footer-logo { font-size: 48px; margin-bottom: 16px; }
+        .footer-title {
+            font-family: var(--font-fa-display);
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 6px;
+        }
+        .footer-subtitle {
+            font-family: var(--font-en-display);
+            font-style: italic;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 24px;
+        }
+        .footer-org {
+            font-size: 0.82rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .footer-divider {
+            width: 60px;
+            height: 2px;
+            background: rgba(255,255,255,0.15);
+            margin: 20px auto;
+        }
+        .footer-copy {
+            font-size: 0.75rem;
+            opacity: 0.5;
+            font-family: var(--font-en);
+        }
+
+        /* ===== Lightbox ===== */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            backdrop-filter: blur(10px);
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: var(--radius-md);
+            box-shadow: 0 0 60px rgba(0,0,0,0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== Scroll Animations ===== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .hero { height: 80vh; min-height: 500px; }
+            .hero-content { padding: 40px 24px 40px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .stat-item { border-bottom: 1px solid var(--gray-100); }
+            .info-blocks { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-item.featured { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
+            .content-card { padding: 24px; }
+            .iucn-banner { flex-direction: column; text-align: center; padding: 24px; }
+            .lang-toggle { top: 12px; left: 12px; }
+            .timeline { padding-right: 30px; }
+            .timeline::before { right: 10px; }
+            .timeline-item::before { right: -28px; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .hero-title-fa { font-size: 1.8rem; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Language Toggle ===== -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('fa')" id="btn-fa">فارسی</button>
+        <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+        <!-- 
+            گزینه ۱: عکس واقعی (توصیه‌شده)
+            تگ <img> را از حالت کامنت خارج کنید و div.hero-fallback را کامنت کنید
+        -->
+        <!-- <img src="images/hero.jpg" alt="لاک‌پشت منقار عقابی" class="hero-image"> -->
+
+        <!-- گزینه ۲: گرادیان (حالت پیش‌فرض اگر عکس ندارید) -->
+        <div class="hero-fallback">
+            <span class="emoji">🐢</span>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span data-fa="به‌شدت در معرض انقراض" data-en="Critically Endangered">به‌شدت در معرض انقراض</span>
+            </div>
+            <h1 class="hero-title-fa" data-fa="لاک‌پشت منقار عقابی" data-en="لاک‌پشت منقار عقابی">لاک‌پشت منقار عقابی</h1>
+            <p class="hero-title-en">Hawksbill Sea Turtle</p>
+            <p class="hero-scientific">Eretmochelys imbricata</p>
+        </div>
+
+        <div class="scroll-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== Stats Bar ===== -->
+    <div class="container">
+        <div class="stats-bar fade-up">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">2,400<span>+</span></div>
+                    <div class="stat-label" data-fa="نشانه‌گذاری شده" data-en="Tagged Turtles">نشانه‌گذاری شده</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label" data-fa="سال پایش مستمر" data-en="Years of Monitoring">سال پایش مستمر</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">700<span>+</span></div>
+                    <div class="stat-label" data-fa="بازگشت ثبت‌شده" data-en="Recorded Returns">بازگشت ثبت‌شده</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label" data-fa="زیستگاه تحت پایش" data-en="Monitored Habitats">زیستگاه تحت پایش</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== IUCN Status ===== -->
+    <div class="container">
+        <div class="iucn-banner fade-up">
+            <div class="iucn-icon">⚠️</div>
+            <div class="iucn-text">
+                <h3 data-fa="وضعیت حفاظتی IUCN: به‌شدت در معرض خطر انقراض" data-en="وضعیت حفاظتی IUCN: به‌شدت در معرض خطر انقراض">وضعیت حفاظتی IUCN: به‌شدت در معرض خطر انقراض</h3>
+                <p data-fa="روند کاهش جمعیت در سطح جهانی نگران‌کننده است" data-en="روند کاهش جمعیت در سطح جهانی نگران‌کننده است">روند کاهش جمعیت در سطح جهانی نگران‌کننده است</p>
+                <p class="iucn-en">IUCN Status: Critically Endangered (CR) — Global population in steep decline</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== About Section ===== -->
+    <div class="container">
+        <section class="section fade-up">
+            <div class="section-header">
+                <div class="section-overline">About</div>
+                <h2 class="section-title">نماد حیات‌وحش استان بوشهر</h2>
+                <p class="section-title-en">Wildlife Symbol of Bushehr Province</p>
+            </div>
+
+            <div class="content-card">
+                <div class="bilingual-block">
+                    <div class="lang-label fa">فارسی</div>
+                    <p class="text-fa">
+                        لاک‌پشت دریایی منقار عقابی به‌عنوان نماد حیات‌وحش استان بوشهر معرفی شده است؛ انتخابی که هم بازتاب‌دهنده ارزش‌های بوم‌شناختی این منطقه و هم یادآور ضرورت حفاظت از یکی از در معرض‌تهدیدترین گونه‌های دریایی جهان است.
+                    </p>
+                    <div class="lang-label en">English</div>
+                    <p class="text-en">
+                        The Hawksbill sea turtle has emerged as the official wildlife emblem of Bushehr Province, a choice that reflects both the ecological value of the region and the urgent need to conserve one of the world's most threatened marine species.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Info Blocks ===== -->
+    <div class="container">
+        <div class="info-blocks fade-up">
+            <div class="info-block">
+                <div class="info-block-icon habitat">🏝️</div>
+                <h4>زیستگاه تخم‌گذاری</h4>
+                <p>پارک ملی دیر ـ نخیلو از مهم‌ترین زیستگاه‌های تخم‌گذاری این گونه در کشور است. جزایر اُم‌الگُرم و نخیلو سواحلی بکر و امن برای لانه‌گزینی فراهم کرده‌اند.</p>
+                <p class="en-text">Dayyer–Nakhiloo National Park is one of the country's most significant nesting grounds. The uninhabited islands of Om-al-Gorm and Nakhiloo offer rare undisturbed beaches.</p>
+            </div>
+            <div class="info-block">
+                <div class="info-block-icon threat">🚨</div>
+                <h4>تهدیدها</h4>
+                <p>صیادی فشرده و توسعه شتابان سواحل، موجب تکه‌تکه شدن زیستگاه‌ها و اختلال در چرخه‌های حیاتی لاک‌پشت‌ها می‌شود.</p>
+                <p class="en-text">The main pressures stem from intensive fishing activity and rapid coastal development, threatening to fragment nesting habitats.</p>
+            </div>
+            <div class="info-block">
+                <div class="info-block-icon role">🌊</div>
+                <h4>نقش بوم‌شناختی</h4>
+                <p>با تغذیه از اسفنج‌ها به حفظ سلامت زیست‌بوم‌های مرجانی و تعادل سطوح تغذیه‌ای کمک می‌کنند.</p>
+                <p class="en-text">By feeding on sponges, they help maintain healthy coral reef systems and balance lower trophic levels.</p>
+            </div>
+            <div class="info-block">
+                <div class="info-block-icon protect">🛡️</div>
+                <h4>حفاظت و پایش</h4>
+                <p>عملیات نشانه‌گذاری و زیست‌سنجی برای شناسایی فردبه‌فرد لاک‌پشت‌ها و ثبت مراجعات مکرر آن‌ها انجام می‌شود.</p>
+                <p class="en-text">Tagging and biometric surveys identify individual turtles and track their return to the same beaches over multiple years.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Detailed Description ===== -->
+    <div class="container">
+        <section class="section fade-up">
+            <div class="section-header">
+                <div class="section-overline">Details</div>
+                <h2 class="section-title">شرح کامل</h2>
+                <p class="section-title-en">Full Description</p>
+            </div>
+
+            <div class="content-card">
+                <div class="bilingual-block">
+                    <div class="lang-label fa">فارسی</div>
+                    <p class="text-fa">
+                        پارک ملی دیر ـ نخیلو در سواحل خلیج فارس، از مهم‌ترین زیستگاه‌های تخم‌گذاری لاک‌پشت‌های منقار عقابی در کشور به شمار می‌آید و آب‌های کم‌عمق آن، محل تغذیه ارزشمندی برای لاک‌پشت‌های سبز است. جزایر غیرمسکونی اُم‌الگُرم و نخیلو که از حضور شکارگرانی مانند روباه و شغال خالی هستند، سواحلی بکر و امن را برای لانه‌گزینی این گونه فراهم کرده‌اند.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        لاک‌پشت منقار عقابی در فهرست گونه‌های به‌شدت در معرض خطر انقراض قرار دارد و روند کاهش جمعیت آن در سطح جهانی نگران‌کننده است. از آنجا که تنها بخش بسیار اندکی از نوزادان این گونه تا سن بلوغ زنده می‌مانند، از دست رفتن هر بخش از زیستگاه‌های تخم‌گذاری می‌تواند پیامدهایی جبران‌ناپذیر به همراه داشته باشد.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        امروزه مهم‌ترین تهدیدهای این گونه ناشی از صیادی فشرده و توسعه شتابان سواحل است. برداشت بی‌رویه از منابع دریایی همراه با گسترش سکونتگاه‌ها و پروژه‌های عمرانی در نوار ساحلی، موجب تکه‌تکه شدن زیستگاه‌ها و اختلال در چرخه‌های حیاتی لاک‌پشت‌ها می‌شود؛ آسیبی که جبران آن ممکن است دهه‌ها زمان ببرد.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        فراتر از ارزش نمادین، لاک‌پشت‌های دریایی نقش مهمی در پایداری اکوسیستم‌های دریایی دارند. آن‌ها با تغذیه از گونه‌های پررشد، از جمله اسفنج‌ها، به حفظ سلامت زیست‌بوم‌های مرجانی و تعادل سطوح تغذیه‌ای کمک می‌کنند. این جانوران تقریباً تمام عمر خود را در دریا می‌گذرانند و تنها ماده‌ها برای تخم‌گذاری، در بازه‌ای کوتاه به ساحل می‌آیند؛ لحظه‌ای بسیار حساس برای گونه‌ای که به زندگی دریایی سازگار شده است.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        با توجه به حساسیت بالای این زیستگاه‌ها، این منطقه ابتدا به‌عنوان «منطقه حفاظت‌شده» معرفی شد و در میانه دهه ۱۳۸۰ به پارک ملی ارتقا یافت تا امکان مدیریت و حفاظت مؤثرتر فراهم شود.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        امروزه برنامه‌های پایش در فصل تخم‌گذاری، داده‌های مهمی درباره روند جمعیتی و وضعیت سلامت لاک‌پشت‌ها فراهم می‌کند. در این دوره، عملیات نشانه‌گذاری و زیست‌سنجی انجام می‌شود تا فردبه‌فرد لاک‌پشت‌ها شناسایی و مراجعات مکرر آن‌ها به همین سواحل طی سال‌های متوالی ثبت شود؛ رفتاری که در این جمعیت به‌خوبی مستند شده است. هدف نهایی این برنامه‌ها، ایجاد پایگاه داده‌ای جامع برای پشتیبانی از تصمیم‌گیری‌های حفاظتی است.
+                    </p>
+                </div>
+
+                <div class="bilingual-block">
+                    <p class="text-fa">
+                        پس از بیش از پانزده سال تلاش پیوسته حفاظتی و پایشی، کارشناسان بر این باورند که تداوم این اقدامات می‌تواند آینده‌ای امن‌تر برای لاک‌پشت منقار عقابی در سواحل جنوبی ایران رقم بزند و این نماد زنده از میراث طبیعی بوشهر را برای نسل‌های آینده حفظ کند.
+                    </p>
+                </div>
+
+                <!-- بخش انگلیسی کامل -->
+                <details style="margin-top: 20px;">
+                    <summary style="cursor:pointer; font-family: var(--font-en); font-weight: 600; color: var(--ocean-mid); font-size: 0.9rem; padding: 12px 0;">
+                        📖 Read Full English Description
+                    </summary>
+                    <div class="text-en" style="margin-top: 12px;">
+                        <p style="margin-bottom: 12px;">The Hawksbill sea turtle has emerged as the official wildlife emblem of Bushehr Province, a choice that reflects both the ecological value of the region and the urgent need to conserve one of the world's most threatened marine species.</p>
+                        <p style="margin-bottom: 12px;">Located along the Persian Gulf coast, Dayyer–Nakhiloo National Park serves as one of the country's most significant nesting grounds for the Hawksbill sea turtle, while its shallow coastal waters provide rich foraging areas for Green turtles. The uninhabited islands of Om-al-Gorm and Nakhiloo, free from terrestrial predators such as foxes and jackals, offer rare undisturbed beaches where turtles can safely lay their eggs.</p>
+                        <p style="margin-bottom: 12px;">The Hawksbill sea turtle is listed as critically endangered, with global populations in steep decline. Given that only a small fraction of hatchlings ever survive long enough to reproduce, any loss of nesting habitat can have irreversible consequences for the species.</p>
+                        <p style="margin-bottom: 12px;">Today, the main pressures facing these turtles stem from intensive fishing activity and rapid coastal development. Overfishing, combined with expanding human settlements and infrastructure projects along the shoreline, threatens to fragment nesting habitats and disrupt vital life cycles — ecological damage that may take decades to repair.</p>
+                        <p style="margin-bottom: 12px;">Beyond their symbolic value, sea turtles are key architects of marine ecosystems. By feeding on fast-growing species such as sponges, they help maintain healthy coral reef systems and balance lower trophic levels. They spend nearly their entire lives at sea; only the females briefly come ashore to lay eggs — a vulnerable moment for an animal evolutionarily adapted to the water.</p>
+                        <p style="margin-bottom: 12px;">Recognizing the sensitivity of these habitats, authorities first declared the area protected and later upgraded it to national park status in the mid-2000s, enabling tighter management and stronger legal safeguards.</p>
+                        <p style="margin-bottom: 12px;">Ongoing monitoring programs during the nesting season now provide essential data on population trends and turtle health. Tagging and biometric surveys are being conducted to identify individual turtles and track their return to the same beaches over multiple years — a behavior well documented in this population. The long-term goal is the creation of a comprehensive database to guide conservation decision-making.</p>
+                        <p>With more than 15 years of continuous conservation work already undertaken, experts believe that sustained protection and scientific monitoring can help secure the future of the Hawksbill sea turtle along Iran's southern shores — and preserve a living emblem of Bushehr's natural heritage.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Gallery ===== -->
+    <div class="container">
+        <section class="section fade-up">
+            <div class="section-header">
+                <div class="section-overline">Gallery</div>
+                <h2 class="section-title">گالری تصاویر</h2>
+                <p class="section-title-en">Photo Gallery</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item featured" onclick="openLightbox(this)">
+                    <img src="images/gallery1.jpg" alt="لاک‌پشت منقار عقابی در حال شنا">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/gallery2.jpg" alt="لانه‌گزینی در ساحل">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/gallery3.jpg" alt="نوزاد لاک‌پشت">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/gallery4.jpg" alt="صخره مرجانی">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/gallery5.jpg" alt="عملیات نشانه‌گذاری">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="images/gallery6.jpg" alt="جزیره نخیلو">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Infographic ===== -->
+    <div class="container">
+        <section class="section fade-up">
+            <div class="section-header">
+                <div class="section-overline">Infographic</div>
+                <h2 class="section-title">اینفوگرافیک</h2>
+                <p class="section-title-en">Key Facts at a Glance</p>
+            </div>
+
+            <div class="infographic-wrapper" onclick="openLightbox(this)">
+                <img src="images/infographic.jpg" alt="اینفوگرافیک لاک‌پشت منقار عقابی" style="cursor: zoom-in;">
+                <p class="infographic-caption" data-fa="اینفوگرافیک آماری لاک‌پشت منقار عقابی — اداره کل حفاظت محیط زیست استان بوشهر" data-en="Hawksbill Sea Turtle Key Statistics — Bushehr Province Department of Environment">اینفوگرافیک آماری لاک‌پشت منقار عقابی — اداره کل حفاظت محیط زیست استان بوشهر</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Timeline ===== -->
+    <div class="container">
+        <section class="section fade-up">
+            <div class="section-header">
+                <div class="section-overline">Timeline</div>
+                <h2 class="section-title">سیر حفاظت</h2>
+                <p class="section-title-en">Conservation Timeline</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">مرحله اول</div>
+                    <h4>معرفی منطقه حفاظت‌شده</h4>
+                    <p>این منطقه ابتدا به‌عنوان «منطقه حفاظت‌شده» معرفی شد</p>
+                    <p class="en-text" style="font-family:var(--font-en);font-size:0.75rem;color:var(--gray-400);direction:ltr;margin-top:6px;">The area was first declared as a protected zone</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">میانه دهه ۱۳۸۰ · Mid-2000s</div>
+                    <h4>ارتقا به پارک ملی</h4>
+                    <p>به پارک ملی ارتقا یافت تا امکان مدیریت و حفاظت مؤثرتر فراهم شود</p>
+                    <p class="en-text" style="font-family:var(--font-en);font-size:0.75rem;color:var(--gray-400);direction:ltr;margin-top:6px;">Upgraded to national park status, enabling tighter management</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">+۱۵ سال پایش · 15+ Years</div>
+                    <h4>پایش مستمر و نشانه‌گذاری</h4>
+                    <p>بیش از ۲۴۰۰ لاک‌پشت نشانه‌گذاری شده و ۷۰۰ بازگشت ثبت شده است</p>
+                    <p class="en-text" style="font-family:var(--font-en);font-size:0.75rem;color:var(--gray-400);direction:ltr;margin-top:6px;">Over 2,400 turtles tagged and 700+ returns recorded</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">امروز · Present</div>
+                    <h4>نماد حیات‌وحش بوشهر</h4>
+                    <p>لاک‌پشت منقار عقابی به‌عنوان نماد رسمی حیات‌وحش استان بوشهر معرفی شد</p>
+                    <p class="en-text" style="font-family:var(--font-en);font-size:0.75rem;color:var(--gray-400);direction:ltr;margin-top:6px;">Officially recognized as the wildlife symbol of Bushehr Province</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">🐢</div>
+            <h3 class="footer-title">لاک‌پشت منقار عقابی</h3>
+            <p class="footer-subtitle">Hawksbill Sea Turtle · Eretmochelys imbricata</p>
+
+            <p class="footer-org">
+                خلیج فارس — میراث طبیعی ایران
+                <br>
+                اداره کل حفاظت محیط زیست استان بوشهر
+            </p>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">
+                Persian Gulf — Iran's Natural Heritage · Bushehr Province Department of Environment
+            </p>
+        </div>
+    </footer>
+
+    <!-- ===== Lightbox ===== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close">✕</button>
+        <img src="" alt="Preview" id="lightbox-img">
+    </div>
+
+    <!-- ===== JavaScript ===== -->
+    <script>
+        // === Scroll Animations (Intersection Observer) ===
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // === Lightbox ===
+        function openLightbox(el) {
+            const img = el.querySelector('img') || el;
+            const src = img.src || img.querySelector('img').src;
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        // === Language Toggle ===
+        function setLang(lang) {
+            document.getElementById('btn-fa').classList.toggle('active', lang === 'fa');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+            document.querySelectorAll('[data-fa][data-en]').forEach(el => {
+                el.textContent = lang === 'fa' ? el.dataset.fa : el.dataset.en;
+            });
+
+            // Toggle visibility of language blocks
+            document.querySelectorAll('.lang-label.fa, .text-fa').forEach(el => {
+                el.style.display = lang === 'fa' ? '' : 'none';
+            });
+            document.querySelectorAll('.lang-label.en, .text-en').forEach(el => {
+                el.style.display = lang === 'en' ? '' : (lang === 'fa' ? '' : 'none');
+            });
+        }
+    </script>
+</body>
+</html>
