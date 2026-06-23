@@ -2,1397 +2,3532 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<meta name="theme-color" content="#020D18">
-<title>Eretmochelys imbricata — لاک‌پشت منقار عقابی</title>
-<meta name="description" content="نماد حیات‌وحش استان بوشهر · خلیج فارس · اداره کل حفاظت محیط زیست">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#00263A">
+<meta name="description" content="لاک‌پشت دریایی منقار عقابی — نماد حیات‌وحش استان بوشهر | Hawksbill Sea Turtle — Wildlife Symbol of Bushehr Province">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>لاک‌پشت منقار عقابی | Hawksbill Sea Turtle — Bushehr Province</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600;700;800;900&family=Lalezar&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════
-   TOKENS
-═══════════════════════════════════════════ */
-:root{
-  --black:   #020D18;
-  --deep:    #071A2E;
-  --navy:    #0A2E4A;
-  --ocean:   #0D4F6E;
-  --teal:    #0B7B7A;
-  --teal-l:  #13C4C2;
-  --gold:    #C8923A;
-  --gold-l:  #F2D28A;
-  --cream:   #F5EFE4;
-  --white:   #FFFFFF;
-  --g1:#F0F4F7;--g2:#D9E3EC;--g3:#A8BCC9;--g4:#5C7A8A;--g5:#2E4A56;
-  --red:     #C0392B;
+/* ═══════════════════════════════════════
+   CSS CUSTOM PROPERTIES — DESIGN SYSTEM
+═══════════════════════════════════════ */
+:root {
+  --ocean-deep:     #00263A;
+  --ocean-mid:      #005F8A;
+  --ocean-bright:   #0096C7;
+  --ocean-light:    #90E0EF;
+  --sand-gold:      #C9A84C;
+  --sand-light:     #FFF8E7;
+  --coral-red:      #C1121F;
+  --coral-soft:     #FFE5E5;
+  --mangrove:       #2D6A4F;
+  --surface-white:  #FFFFFF;
+  --surface-glass:  rgba(255,255,255,0.08);
+  --text-on-dark:   #F0F8FF;
+  --text-primary:   #0D1B2A;
+  --text-secondary: #4A6280;
+  --text-muted:     #8AA3B8;
 
-  --fa:      'Vazirmatn', Tahoma, sans-serif;
-  --display: 'Lalezar', 'Vazirmatn', sans-serif;
-  --en:      'Inter', sans-serif;
-  --serif:   'Playfair Display', Georgia, serif;
+  --grad-hero:  linear-gradient(170deg, #00263A 0%, #005F8A 55%, #0096C7 100%);
+  --grad-ocean: linear-gradient(135deg, #005F8A, #0096C7);
+  --grad-gold:  linear-gradient(135deg, #C9A84C, #E8C96A);
+  --grad-card:  linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
 
-  --ease: cubic-bezier(.16,1,.3,1);
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.375rem;
+  --fs-xl:   1.75rem;
+  --fs-2xl:  2.25rem;
+  --fs-3xl:  clamp(2rem, 8vw, 4rem);
+
+  --sp-1: 4px;  --sp-2: 8px;   --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px;  --sp-8: 32px; --sp-10: 40px;
+  --sp-12: 48px; --sp-16: 64px; --sp-20: 80px;
+
+  --r-sm: 8px; --r-md: 16px; --r-lg: 24px; --r-xl: 32px; --r-full: 9999px;
+
+  --shadow-sm:   0 2px 8px rgba(0,38,58,0.15);
+  --shadow-md:   0 8px 24px rgba(0,38,58,0.20);
+  --shadow-lg:   0 16px 48px rgba(0,38,58,0.25);
+  --shadow-glow: 0 0 24px rgba(0,150,199,0.35);
 }
 
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;font-size:16px;-webkit-tap-highlight-color:transparent}
-body{
-  font-family:var(--fa);
-  background:var(--black);
-  color:var(--white);
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-  cursor:none;
-}
-img{display:block;max-width:100%;height:auto}
-a{text-decoration:none;color:inherit}
-button{font-family:inherit;cursor:none;border:none;background:none}
+/* ═══════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ═══════════════════════════════════════════
-   CUSTOM CURSOR
-═══════════════════════════════════════════ */
-.cursor{
-  position:fixed;z-index:99999;pointer-events:none;
-  mix-blend-mode:difference;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
-.cursor-dot{
-  width:8px;height:8px;
-  background:var(--white);border-radius:50%;
-  transform:translate(-50%,-50%);
-  transition:transform .1s;
-}
-.cursor-ring{
-  width:36px;height:36px;
-  border:1px solid rgba(255,255,255,.5);
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  transition:width .4s var(--ease),height .4s var(--ease),transform .12s;
-}
-body:has(a:hover,button:hover) .cursor-ring{width:56px;height:56px}
 
-/* ═══════════════════════════════════════════
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: var(--ocean-deep);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.en-active {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+body.lang-transition {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--ocean-deep); }
+::-webkit-scrollbar-thumb { background: var(--sand-gold); border-radius: var(--r-full); }
+* { scrollbar-width: thin; scrollbar-color: var(--sand-gold) var(--ocean-deep); }
+
+/* Selection */
+::selection { background: var(--sand-gold); color: var(--ocean-deep); }
+
+/* Focus */
+:focus-visible { outline: 2px solid var(--sand-gold); outline-offset: 3px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Fade-in animation for sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══════════════════════════════════════
+   READING PROGRESS BAR
+═══════════════════════════════════════ */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--grad-gold);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* ═══════════════════════════════════════
    LOADING SCREEN
-═══════════════════════════════════════════ */
-#loader{
-  position:fixed;inset:0;z-index:9999;
-  background:var(--black);
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:24px;
-  transition:opacity .8s var(--ease),visibility .8s;
-}
-#loader.done{opacity:0;visibility:hidden;pointer-events:none}
-.loader-turtle{font-size:64px;animation:turtleSwim 1.5s ease-in-out infinite}
-@keyframes turtleSwim{
-  0%,100%{transform:translateY(0) rotate(-5deg)}
-  50%{transform:translateY(-12px) rotate(5deg)}
-}
-.loader-bar{
-  width:180px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;
-}
-.loader-fill{
-  height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--teal-l));
-  border-radius:2px;animation:fill 1.8s var(--ease) forwards;
-}
-@keyframes fill{to{width:100%}}
-.loader-txt{
-  font-family:var(--en);font-size:.75rem;
-  letter-spacing:4px;text-transform:uppercase;
-  color:rgba(255,255,255,.3);
+═══════════════════════════════════════ */
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--ocean-deep);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-6);
+  transition: opacity 0.6s ease;
 }
 
-/* ═══════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════ */
-.hero{
-  position:relative;width:100%;
-  height:100svh;min-height:600px;
-  overflow:hidden;
-}
-.hero-img{
-  position:absolute;inset:0;
-  width:100%;height:100%;object-fit:cover;
-  transform:scale(1.08);
-  animation:heroZoom 18s ease-in-out infinite alternate;
-  filter:brightness(.75) saturate(1.1);
-}
-@keyframes heroZoom{
-  from{transform:scale(1.08)}
-  to  {transform:scale(1.0)}
-}
-.hero-gradient{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(to top, rgba(2,13,24,.97) 0%, rgba(2,13,24,.6) 35%, rgba(2,13,24,.15) 65%, transparent 100%),
-    linear-gradient(to right,rgba(2,13,24,.6) 0%, transparent 50%);
-}
-.hero-noise{
-  position:absolute;inset:0;opacity:.035;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size:200px;pointer-events:none;
+#loading-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* Scan lines */
-.hero-scan{
-  position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(0,0,0,.04) 2px,rgba(0,0,0,.04) 4px);
+/* Phase A */
+#phase-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  transition: opacity 0.5s ease;
 }
 
-/* Opening quote strip */
-.hero-quote-bar{
-  position:absolute;top:0;left:0;right:0;
-  padding:18px 40px;
-  display:flex;align-items:center;gap:14px;
-  background:linear-gradient(to bottom,rgba(2,13,24,.8),transparent);
-  backdrop-filter:blur(0px);
-}
-.hero-quote-bar .line{
-  width:32px;height:1px;
-  background:linear-gradient(to right,var(--teal-l),transparent);
-}
-.hero-quote-bar p{
-  font-family:var(--serif);font-style:italic;
-  font-size:clamp(.75rem,1.5vw,.95rem);
-  color:rgba(255,255,255,.7);letter-spacing:.3px;
-  flex:1;
+#phase-a.hidden { opacity: 0; pointer-events: none; }
+
+/* SVG Turtle */
+.turtle-container {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin-bottom: var(--sp-6);
 }
 
-/* Language pill */
-.lang-pill{
-  position:absolute;top:18px;left:40px;z-index:100;
-  display:flex;
-  background:rgba(255,255,255,.07);
-  backdrop-filter:blur(20px);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:50px;padding:3px;
-}
-.lang-pill button{
-  padding:7px 16px;border-radius:50px;
-  font-size:.72rem;font-weight:700;
-  background:transparent;color:rgba(255,255,255,.45);
-  transition:all .3s;font-family:var(--en);
-  letter-spacing:.5px;text-transform:uppercase;
-  cursor:none;
-}
-.lang-pill button.on{
-  background:rgba(255,255,255,.14);color:var(--white);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);
+.turtle-svg {
+  animation: turtle-swim 2s ease-in-out infinite;
 }
 
-/* Hero center content */
-.hero-center{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:flex-end;
-  padding:0 24px clamp(70px,10vh,120px);
-  text-align:center;
-}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  background:rgba(11,123,122,.2);
-  border:1px solid rgba(19,196,194,.3);
-  backdrop-filter:blur(12px);
-  padding:8px 22px;border-radius:50px;
-  font-size:.72rem;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  color:var(--teal-l);margin-bottom:20px;
-  font-family:var(--en);
-}
-.hero-eyebrow span.dot{
-  width:6px;height:6px;background:#E74C3C;
-  border-radius:50%;animation:pulse 2s infinite;
-}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(231,76,60,.7)}50%{box-shadow:0 0 0 8px rgba(231,76,60,0)}}
-
-.hero-title{
-  font-family:var(--display);
-  font-size:clamp(2.6rem,8vw,6rem);
-  line-height:1.1;margin-bottom:12px;
-  background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,.85) 50%,var(--teal-l) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-  filter:drop-shadow(0 4px 40px rgba(19,196,194,.2));
-}
-.hero-title-en{
-  font-family:var(--serif);font-style:italic;
-  font-size:clamp(1rem,2.5vw,1.6rem);
-  color:rgba(255,255,255,.7);
-  margin-bottom:6px;font-weight:400;
-}
-.hero-sci{
-  font-family:var(--serif);font-style:italic;
-  font-size:.9rem;color:rgba(255,255,255,.35);
-  margin-bottom:32px;
-}
-.hero-divider{
-  width:50px;height:1px;
-  background:linear-gradient(to right,transparent,var(--teal-l),transparent);
-  margin:0 auto 28px;
-}
-.hero-opening-statement{
-  max-width:580px;
-  font-size:clamp(.88rem,1.8vw,1.08rem);
-  font-weight:400;line-height:1.9;
-  color:rgba(255,255,255,.65);
-  text-align:center;
-}
-.hero-opening-statement strong{color:var(--teal-l);font-weight:600}
-
-/* Scroll cue */
-.scroll-cue{
-  position:absolute;bottom:28px;left:50%;
-  transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-}
-.scroll-cue-line{
-  width:1px;height:48px;
-  background:linear-gradient(to bottom,rgba(255,255,255,.5),transparent);
-  animation:lineGrow 2s ease-in-out infinite;
-  transform-origin:top;
-}
-@keyframes lineGrow{
-  0%{transform:scaleY(0);opacity:0}
-  40%{transform:scaleY(1);opacity:1}
-  100%{transform:scaleY(1);opacity:0}
-}
-.scroll-cue-lbl{
-  font-family:var(--en);font-size:.6rem;
-  letter-spacing:3px;text-transform:uppercase;
-  color:rgba(255,255,255,.25);
+@keyframes turtle-swim {
+  0%, 100% { transform: translateX(0) rotate(-2deg); }
+  25% { transform: translateX(6px) rotate(1deg); }
+  50% { transform: translateX(0) rotate(3deg); }
+  75% { transform: translateX(-6px) rotate(0deg); }
 }
 
-/* ═══════════════════════════════════════════
-   WAVE
-═══════════════════════════════════════════ */
-.wave-wrap{margin-bottom:-2px;overflow:hidden;line-height:0;background:var(--black)}
-.wave-wrap svg{display:block;width:100%}
-
-/* ═══════════════════════════════════════════
-   STATS
-═══════════════════════════════════════════ */
-.stats{
-  background:var(--black);
-  padding:0 24px 80px;
+.flipper-front {
+  animation: flipper-f 1.2s ease-in-out infinite;
+  transform-origin: 35px 38px;
 }
-.stats-inner{
-  max-width:940px;margin:0 auto;
-  display:grid;grid-template-columns:repeat(4,1fr);
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:24px;overflow:hidden;
-  background:rgba(255,255,255,.03);
-  backdrop-filter:blur(20px);
-  box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08);
-}
-.stat-col{
-  padding:36px 20px;text-align:center;
-  border-left:1px solid rgba(255,255,255,.06);
-  position:relative;overflow:hidden;
-  transition:background .3s;
-}
-.stat-col::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 120%,rgba(11,123,122,.15),transparent 70%);
-  opacity:0;transition:opacity .4s;
-}
-.stat-col:hover::before{opacity:1}
-.stat-col:last-child{border-left:none}
-.stat-n{
-  font-family:var(--en);font-size:2.4rem;
-  font-weight:800;color:var(--white);
-  line-height:1;margin-bottom:8px;
-  direction:ltr;
-}
-.stat-n em{font-style:normal;font-size:1.3rem;color:var(--teal-l)}
-.stat-l{
-  font-size:.72rem;font-weight:600;
-  color:var(--g3);letter-spacing:.5px;line-height:1.5;
+.flipper-back {
+  animation: flipper-b 1.2s ease-in-out infinite;
+  transform-origin: 80px 55px;
 }
 
-/* ═══════════════════════════════════════════
-   SECTIONS — DARK THEME
-═══════════════════════════════════════════ */
-.wrap{max-width:900px;margin:0 auto;padding:0 24px}
-.s{padding:90px 0}
-
-.overline{
-  font-family:var(--en);font-size:.65rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:3px;
-  color:var(--teal-l);margin-bottom:12px;
+@keyframes flipper-f {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-18deg); }
 }
-.h2{
-  font-family:var(--display);
-  font-size:clamp(1.8rem,4vw,2.8rem);
-  color:var(--white);line-height:1.2;margin-bottom:6px;
-}
-.h2-en{
-  font-family:var(--serif);font-style:italic;
-  font-size:1rem;color:var(--g4);
-  direction:ltr;text-align:right;
+@keyframes flipper-b {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(18deg); }
 }
 
-/* ═══════════════════════════════════════════
-   IUCN ALERT
-═══════════════════════════════════════════ */
-.iucn{
-  border-radius:20px;overflow:hidden;
-  margin-bottom:32px;
-  position:relative;
+/* Bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(144,224,239,0.5);
+  animation: bubble-rise 2s ease-in infinite;
 }
-.iucn-inner{
-  background:linear-gradient(135deg,#5D0A05,#8B1A13,#C0392B);
-  padding:28px 32px;
-  display:flex;align-items:center;gap:20px;
-  position:relative;z-index:1;
-}
-.iucn::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 80% 50%,rgba(231,76,60,.2),transparent 60%);
-  z-index:0;
-}
-.iucn-badge{
-  flex-shrink:0;
-  background:rgba(255,255,255,.15);
-  border-radius:14px;padding:14px 18px;
-  text-align:center;
-  border:1px solid rgba(255,255,255,.2);
-}
-.iucn-badge .code{
-  font-family:var(--en);font-size:1.6rem;
-  font-weight:900;color:#fff;line-height:1;
-}
-.iucn-badge .sub{font-size:.6rem;opacity:.6;font-family:var(--en);letter-spacing:1px}
-.iucn-text h3{font-size:1.05rem;font-weight:800;margin-bottom:4px}
-.iucn-text p{font-size:.82rem;opacity:.85;line-height:1.6}
-.iucn-text .en-txt{
-  font-family:var(--en);font-size:.72rem;
-  opacity:.5;direction:ltr;margin-top:4px;
+.bubble:nth-child(1) { width: 6px; height: 6px; bottom: 10px; right: 5px; animation-delay: 0s; }
+.bubble:nth-child(2) { width: 4px; height: 4px; bottom: 5px; right: 20px; animation-delay: 0.5s; }
+.bubble:nth-child(3) { width: 8px; height: 8px; bottom: 8px; right: 35px; animation-delay: 1s; }
+
+@keyframes bubble-rise {
+  0% { transform: translateY(0); opacity: 0.6; }
+  100% { transform: translateY(-50px); opacity: 0; }
 }
 
-/* ═══════════════════════════════════════════
-   GLASS CARDS
-═══════════════════════════════════════════ */
-.glass{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:24px;
-  backdrop-filter:blur(20px);
-  padding:36px;margin-bottom:24px;
-  transition:background .35s,border-color .35s,transform .35s var(--ease),box-shadow .35s;
-  position:relative;overflow:hidden;
-}
-.glass::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 50% 0%,rgba(11,123,122,.08),transparent 60%);
-  opacity:0;transition:opacity .4s;pointer-events:none;
-}
-.glass:hover::before{opacity:1}
-.glass:hover{
-  background:rgba(255,255,255,.06);
-  border-color:rgba(19,196,194,.2);
-  transform:translateY(-3px);
-  box-shadow:0 24px 60px rgba(0,0,0,.4),0 0 0 1px rgba(19,196,194,.1);
+.loading-title {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--surface-white);
+  text-align: center;
+  margin-bottom: var(--sp-2);
 }
 
-/* ═══════════════════════════════════════════
-   FEATURE GRID
-═══════════════════════════════════════════ */
-.feat-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:16px;margin-bottom:24px;
-}
-.feat-card{
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:18px;padding:28px 24px;
-  transition:all .35s var(--ease);
-  position:relative;overflow:hidden;
-}
-.feat-card::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(11,123,122,.06),transparent);
-  opacity:0;transition:opacity .3s;pointer-events:none;
-}
-.feat-card:hover::after{opacity:1}
-.feat-card:hover{
-  border-color:rgba(19,196,194,.25);
-  transform:translateY(-4px);
-  box-shadow:0 20px 50px rgba(0,0,0,.4);
-}
-.feat-icon{
-  width:52px;height:52px;border-radius:14px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:22px;margin-bottom:16px;
-  background:rgba(11,123,122,.15);
-  border:1px solid rgba(19,196,194,.15);
-}
-.feat-card h4{
-  font-size:.95rem;font-weight:700;
-  color:var(--white);margin-bottom:8px;
-}
-.feat-card p{font-size:.8rem;color:var(--g3);line-height:1.8}
-.feat-card .en{
-  font-family:var(--en);font-size:.7rem;
-  color:var(--g4);direction:ltr;
-  margin-top:10px;padding-top:10px;
-  border-top:1px solid rgba(255,255,255,.06);
+.loading-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--ocean-light);
+  text-align: center;
+  margin-bottom: var(--sp-8);
+  font-weight: 500;
 }
 
-/* ═══════════════════════════════════════════
-   TEXT
-═══════════════════════════════════════════ */
-.p-fa{
-  font-size:.97rem;line-height:2.1;
-  color:rgba(255,255,255,.65);
-  text-align:justify;margin-bottom:18px;
-}
-.p-fa strong{color:var(--teal-l);font-weight:700}
-.p-en{
-  font-family:var(--en);font-size:.87rem;
-  line-height:1.9;color:var(--g4);
-  direction:ltr;text-align:left;
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.06);
-  border-right:3px solid var(--teal);
-  padding:20px 22px;border-radius:14px;
-  margin-top:4px;
-}
-.badge{
-  display:inline-block;font-size:.6rem;font-weight:800;
-  text-transform:uppercase;letter-spacing:1.5px;
-  padding:4px 12px;border-radius:6px;margin-bottom:10px;
-}
-.badge.fa{background:rgba(11,123,122,.2);color:var(--teal-l);border:1px solid rgba(19,196,194,.2)}
-.badge.en{background:rgba(255,255,255,.05);color:var(--g3);border:1px solid rgba(255,255,255,.08)}
-
-/* ═══════════════════════════════════════════
-   CINEMATIC QUOTE
-═══════════════════════════════════════════ */
-.quote-block{
-  position:relative;overflow:hidden;
-  border-radius:28px;padding:0;margin-bottom:24px;
-}
-.quote-bg{
-  position:absolute;inset:0;
-  background:linear-gradient(135deg,#071A2E 0%,#0A2E4A 50%,#0D4F6E 100%);
-}
-.quote-bg-img{
-  position:absolute;inset:0;
-  background-image:url('images/gallery1.jpg');
-  background-size:cover;background-position:center;
-  opacity:.12;filter:saturate(.5);
-}
-.quote-glow{
-  position:absolute;
-  width:400px;height:400px;
-  background:radial-gradient(circle,rgba(11,123,122,.3),transparent 70%);
-  top:-100px;right:-100px;pointer-events:none;
-}
-.quote-inner{
-  position:relative;z-index:1;
-  padding:clamp(32px,5vw,56px);
-}
-.quote-mark{
-  font-family:var(--serif);font-size:120px;
-  line-height:.7;color:rgba(19,196,194,.15);
-  margin-bottom:8px;display:block;
-  font-style:normal;
-}
-.quote-txt{
-  font-size:clamp(.95rem,2vw,1.18rem);
-  line-height:2.1;font-weight:400;
-  color:rgba(255,255,255,.82);
-  margin-bottom:28px;
-  text-align:justify;
-}
-.quote-txt em{
-  font-style:normal;color:var(--teal-l);font-weight:700;
-}
-.quote-sig{
-  display:flex;align-items:center;gap:16px;
-  padding-top:24px;
-  border-top:1px solid rgba(255,255,255,.08);
-}
-.quote-avatar{
-  width:52px;height:52px;border-radius:50%;
-  background:linear-gradient(135deg,var(--teal),var(--teal-l));
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;flex-shrink:0;
-  border:2px solid rgba(19,196,194,.3);
-}
-.quote-name{font-weight:800;font-size:.95rem;margin-bottom:2px}
-.quote-role{font-size:.75rem;color:var(--g4);line-height:1.5}
-.quote-role-en{font-family:var(--en);font-size:.65rem;color:var(--g4);direction:ltr;opacity:.6;margin-top:2px}
-
-/* Second quote — slightly different style */
-.quote-block-2{
-  background:rgba(200,146,58,.07);
-  border:1px solid rgba(200,146,58,.15);
-  border-radius:20px;padding:32px;
-  margin-bottom:24px;
-  position:relative;overflow:hidden;
-}
-.quote-block-2::before{
-  content:'"';position:absolute;
-  top:-20px;right:16px;
-  font-family:var(--serif);font-size:140px;
-  color:rgba(200,146,58,.08);pointer-events:none;
-  line-height:1;
-}
-.quote-block-2 .qt{
-  font-size:.97rem;line-height:2;
-  color:rgba(255,255,255,.7);
-  margin-bottom:20px;font-style:italic;
-  font-family:var(--serif);
-}
-.quote-block-2 .sig{
-  display:flex;align-items:center;gap:14px;
-}
-.quote-block-2 .av2{
-  width:44px;height:44px;border-radius:50%;
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
-  display:flex;align-items:center;justify-content:center;
-  font-size:16px;flex-shrink:0;
-}
-.quote-block-2 .nm{font-weight:700;font-size:.88rem;margin-bottom:1px}
-.quote-block-2 .rl{font-size:.72rem;color:var(--g4)}
-
-/* ═══════════════════════════════════════════
-   FULLWIDTH IMAGE BREAK
-═══════════════════════════════════════════ */
-.img-break{
-  width:100%;height:clamp(240px,40vw,480px);
-  overflow:hidden;position:relative;
-  margin:0 0 80px;
-}
-.img-break img{
-  width:100%;height:100%;object-fit:cover;
-  transform:scale(1.05);
-  transition:transform 6s ease;
-  filter:brightness(.7) saturate(1.1);
-}
-.img-break:hover img{transform:scale(1.0)}
-.img-break-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to right,rgba(2,13,24,.6),transparent 40%,transparent 60%,rgba(2,13,24,.6));
-}
-.img-break-txt{
-  position:absolute;left:0;right:0;bottom:0;
-  padding:32px 40px;
-  background:linear-gradient(to top,rgba(2,13,24,.9),transparent);
-}
-.img-break-txt p{
-  font-family:var(--serif);font-style:italic;
-  font-size:clamp(.85rem,1.8vw,1.1rem);
-  color:rgba(255,255,255,.7);max-width:500px;
+.progress-container {
+  width: 100%;
+  max-width: 320px;
 }
 
-/* ═══════════════════════════════════════════
-   DATA HIGHLIGHT
-═══════════════════════════════════════════ */
-.data-band{
-  padding:80px 24px;
-  background:linear-gradient(135deg,rgba(11,123,122,.08),rgba(13,79,110,.12));
-  border-top:1px solid rgba(255,255,255,.05);
-  border-bottom:1px solid rgba(255,255,255,.05);
-  text-align:center;margin:0 0 0;
-}
-.data-band .big-num{
-  font-family:var(--en);
-  font-size:clamp(5rem,15vw,10rem);
-  font-weight:900;line-height:1;
-  background:linear-gradient(135deg,var(--teal-l),var(--white));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
-  margin-bottom:12px;
-}
-.data-band .big-lbl{
-  font-size:clamp(.9rem,2vw,1.2rem);font-weight:600;
-  color:rgba(255,255,255,.7);margin-bottom:6px;
-}
-.data-band .big-sub{
-  font-family:var(--en);font-size:.82rem;
-  color:var(--g4);font-style:italic;
+.progress-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--r-full);
+  overflow: hidden;
+  margin-bottom: var(--sp-2);
 }
 
-/* ═══════════════════════════════════════════
-   GALLERY
-═══════════════════════════════════════════ */
-.gallery-masonry{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  grid-template-rows:auto;
-  gap:10px;margin-bottom:24px;
-}
-.gitem{
-  position:relative;border-radius:16px;
-  overflow:hidden;cursor:zoom-in;
-  background:var(--deep);
-}
-.gitem img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .7s var(--ease),filter .4s;
-  filter:brightness(.9) saturate(1.05);
-}
-.gitem:hover img{transform:scale(1.06);filter:brightness(1) saturate(1.2)}
-.gitem-a{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;min-height:300px}
-.gitem-b,.gitem-c,.gitem-d,.gitem-e,.gitem-f{aspect-ratio:1}
-.gitem-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(2,13,24,.8) 0%,transparent 50%);
-  opacity:0;transition:opacity .35s;
-  display:flex;flex-direction:column;
-  justify-content:flex-end;padding:16px;
-}
-.gitem:hover .gitem-overlay{opacity:1}
-.gitem-overlay span{
-  font-size:.72rem;font-weight:600;
-  color:rgba(255,255,255,.8);
-  background:rgba(0,0,0,.4);
-  backdrop-filter:blur(4px);
-  padding:5px 12px;border-radius:20px;
-  width:fit-content;
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--grad-gold);
+  border-radius: var(--r-full);
+  transition: width 2.5s linear;
 }
 
-/* ═══════════════════════════════════════════
-   INFOGRAPHIC
-═══════════════════════════════════════════ */
-.infowrap{
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:24px;padding:20px;
-  cursor:zoom-in;margin-bottom:24px;
-  text-align:center;
-  transition:border-color .3s;
-}
-.infowrap:hover{border-color:rgba(19,196,194,.2)}
-.infowrap img{
-  max-width:100%;border-radius:14px;
-  box-shadow:0 20px 60px rgba(0,0,0,.5);
-}
-.infowrap figcaption{
-  margin-top:14px;font-size:.75rem;
-  color:var(--g4);font-family:var(--en);
-  letter-spacing:.3px;
+.progress-text {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-align: center;
 }
 
-/* ═══════════════════════════════════════════
-   TIMELINE
-═══════════════════════════════════════════ */
-.tl{position:relative;padding-right:48px}
-.tl::before{
-  content:'';position:absolute;
-  right:18px;top:0;bottom:0;width:1px;
-  background:linear-gradient(to bottom,var(--teal-l),rgba(10,46,74,0));
+/* Phase B — Management Message */
+#phase-b {
+  display: none;
+  width: 100%;
+  max-width: 480px;
+  animation: slide-up 0.6s ease forwards;
 }
-.tl-item{
-  position:relative;
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:16px;padding:22px 24px;
-  margin-bottom:14px;
-  transition:all .3s var(--ease);
-}
-.tl-item::before{
-  content:'';position:absolute;
-  right:-38px;top:20px;
-  width:14px;height:14px;
-  background:var(--teal);border-radius:50%;
-  border:3px solid var(--black);
-  box-shadow:0 0 0 2px var(--teal-l),0 0 12px rgba(19,196,194,.4);
-}
-.tl-item:hover{
-  border-color:rgba(19,196,194,.2);
-  background:rgba(11,123,122,.06);
-}
-.tl-yr{
-  font-family:var(--en);font-size:.68rem;
-  font-weight:700;color:var(--teal-l);
-  letter-spacing:1px;margin-bottom:6px;text-transform:uppercase;
-}
-.tl-item h4{
-  font-size:.92rem;font-weight:700;
-  color:var(--white);margin-bottom:5px;
-}
-.tl-item p{font-size:.8rem;color:var(--g3);line-height:1.7}
 
-/* ═══════════════════════════════════════════
+@keyframes slide-up {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.welcome-card {
+  background: rgba(0,95,138,0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  text-align: center;
+}
+
+.seal-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--sand-gold);
+  background: rgba(201,168,76,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto var(--sp-3);
+}
+
+.seal-label {
+  font-size: var(--fs-xs);
+  color: var(--sand-gold);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--sp-4);
+  text-transform: uppercase;
+}
+
+.welcome-message {
+  font-size: var(--fs-sm);
+  color: var(--text-on-dark);
+  line-height: 1.8;
+  margin-bottom: var(--sp-5);
+  font-style: italic;
+  border-right: 3px solid var(--sand-gold);
+  padding-right: var(--sp-4);
+  text-align: right;
+}
+
+[dir="ltr"] .welcome-message {
+  border-right: none;
+  border-left: 3px solid var(--sand-gold);
+  padding-right: 0;
+  padding-left: var(--sp-4);
+  text-align: left;
+}
+
+.welcome-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: var(--sp-4) 0;
+}
+
+.attribution-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  justify-content: center;
+  margin-bottom: var(--sp-5);
+}
+
+.avatar-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--grad-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--ocean-deep);
+  flex-shrink: 0;
+}
+
+.attribution-text { text-align: right; }
+[dir="ltr"] .attribution-text { text-align: left; }
+
+.attribution-name {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--sand-gold);
+}
+
+.attribution-title {
+  font-size: var(--fs-xs);
+  color: var(--ocean-light);
+}
+
+.enter-btn {
+  width: 100%;
+  padding: var(--sp-4) var(--sp-6);
+  background: var(--grad-gold);
+  color: var(--ocean-deep);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  border-radius: var(--r-full);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  font-family: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 52px;
+}
+
+.enter-btn:hover { transform: scale(1.02); box-shadow: var(--shadow-glow); }
+
+/* ═══════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════ */
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,38,58,0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--sp-4);
+  transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar.scrolled {
+  height: 52px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text-on-dark);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+}
+
+.nav-logo-icon { font-size: 1.4rem; }
+
+.hamburger {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: var(--r-sm);
+  transition: background 0.2s;
+}
+
+.hamburger:hover { background: rgba(255,255,255,0.08); }
+
+.ham-line {
+  width: 22px;
+  height: 2px;
+  background: var(--text-on-dark);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active .ham-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active .ham-line:nth-child(2) { opacity: 0; }
+.hamburger.active .ham-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile fullscreen menu */
+#mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: var(--ocean-deep);
+  z-index: 790;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: var(--sp-6);
+}
+
+#mobile-menu.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu-items {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.mobile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  height: 56px;
+  padding: 0 var(--sp-4);
+  color: var(--text-on-dark);
+  font-size: var(--fs-md);
+  font-weight: 500;
+  border-radius: var(--r-md);
+  transition: background 0.2s, color 0.2s;
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+[dir="ltr"] .mobile-nav-item { transform: translateX(-30px); }
+
+#mobile-menu.open .mobile-nav-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#mobile-menu.open .mobile-nav-item:nth-child(1) { transition: opacity 0.3s 0.1s ease, transform 0.3s 0.1s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(2) { transition: opacity 0.3s 0.15s ease, transform 0.3s 0.15s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(3) { transition: opacity 0.3s 0.2s ease, transform 0.3s 0.2s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(4) { transition: opacity 0.3s 0.25s ease, transform 0.3s 0.25s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(5) { transition: opacity 0.3s 0.3s ease, transform 0.3s 0.3s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(6) { transition: opacity 0.3s 0.35s ease, transform 0.3s 0.35s ease, background 0.2s, color 0.2s; }
+#mobile-menu.open .mobile-nav-item:nth-child(7) { transition: opacity 0.3s 0.4s ease, transform 0.3s 0.4s ease, background 0.2s, color 0.2s; }
+
+.mobile-nav-item:hover { background: rgba(255,255,255,0.08); color: var(--sand-gold); }
+.mobile-nav-item .nav-icon { font-size: 1.2rem; }
+
+.menu-lang-toggle {
+  margin-top: var(--sp-8);
+  padding: var(--sp-3) var(--sp-6);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-full);
+  color: var(--text-on-dark);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  min-height: 48px;
+  transition: background 0.2s;
+}
+.menu-lang-toggle:hover { background: rgba(255,255,255,0.15); }
+
+/* ═══════════════════════════════════════
+   HERO SECTION
+═══════════════════════════════════════ */
+#hero {
+  position: relative;
+  height: 100svh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding: var(--sp-6);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(0,38,58,0.7) 0%,
+    rgba(0,38,58,0.3) 40%,
+    rgba(0,38,58,0.8) 85%,
+    rgba(0,38,58,1.0) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding-bottom: var(--sp-10);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  border: 1.5px solid var(--sand-gold);
+  border-radius: var(--r-full);
+  color: var(--surface-white);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  margin-bottom: var(--sp-5);
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(201,168,76,0); }
+}
+
+.hero-title {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  color: var(--surface-white);
+  line-height: 1.2;
+  margin-bottom: var(--sp-2);
+}
+
+.hero-scientific {
+  font-style: italic;
+  font-size: var(--fs-md);
+  color: var(--ocean-light);
+  margin-bottom: var(--sp-5);
+}
+
+.hero-iucn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--coral-red);
+  color: white;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--r-full);
+  margin-bottom: var(--sp-5);
+  animation: iucn-pulse 2s ease-in-out infinite;
+}
+
+@keyframes iucn-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(193,18,31,0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(193,18,31,0); }
+}
+
+.hero-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: white;
+  animation: dot-blink 1s ease-in-out infinite;
+}
+@keyframes dot-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero-desc {
+  font-size: var(--fs-base);
+  color: rgba(240,248,255,0.85);
+  margin-bottom: var(--sp-8);
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto var(--sp-8);
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-6);
+  background: var(--grad-gold);
+  color: var(--ocean-deep);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  border-radius: var(--r-full);
+  min-height: 52px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.btn-primary:hover { transform: scale(1.03); box-shadow: 0 8px 24px rgba(201,168,76,0.4); }
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-6);
+  background: transparent;
+  color: var(--surface-white);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  border-radius: var(--r-full);
+  border: 2px solid rgba(255,255,255,0.5);
+  min-height: 52px;
+  transition: border-color 0.2s, background 0.2s;
+  font-family: inherit;
+}
+
+.btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+  color: rgba(255,255,255,0.6);
+  font-size: var(--fs-xs);
+  animation: bounce-down 2s ease-in-out infinite;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+.scroll-chevron { font-size: 1.2rem; }
+
+/* Particles */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* SVG Wave */
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  line-height: 0;
+}
+
+/* ═══════════════════════════════════════
+   STATISTICS STRIP
+═══════════════════════════════════════ */
+#stats {
+  background: var(--grad-ocean);
+  padding: var(--sp-10) var(--sp-4);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stats-grid .stat-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 260px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-md);
+  padding: var(--sp-5) var(--sp-4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.04);
+  box-shadow: var(--shadow-glow);
+}
+
+.stat-icon { font-size: 1.8rem; margin-bottom: var(--sp-2); }
+
+.stat-number {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--sand-gold);
+  margin-bottom: var(--sp-1);
+}
+
+.stat-label {
+  font-size: var(--fs-xs);
+  color: var(--text-on-dark);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════
+   SECTION HEADERS
+═══════════════════════════════════════ */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--sp-10);
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  margin-bottom: var(--sp-3);
+  line-height: 1.2;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin: var(--sp-3) auto;
+}
+
+.divider-line {
+  height: 2px;
+  width: 48px;
+  background: var(--grad-gold);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: var(--fs-sm);
+  margin-top: var(--sp-3);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════
+   ABOUT SPECIES
+═══════════════════════════════════════ */
+#about {
+  background: var(--sand-light);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.about-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+
+.about-image-wrap {
+  position: relative;
+}
+
+.about-image-wrap img {
+  width: 100%;
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
+.image-caption {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.about-text .section-header { text-align: right; }
+[dir="ltr"] .about-text .section-header { text-align: left; }
+
+.about-para {
+  font-size: var(--fs-base);
+  color: var(--text-primary);
+  line-height: 1.8;
+  margin-bottom: var(--sp-5);
+}
+
+.key-facts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface-white);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  border-right: 4px solid var(--ocean-bright);
+  min-height: 52px;
+}
+
+[dir="ltr"] .fact-item {
+  border-right: none;
+  border-left: 4px solid var(--ocean-bright);
+}
+
+.fact-icon { font-size: 1.3rem; flex-shrink: 0; }
+.fact-text { font-size: var(--fs-sm); color: var(--text-primary); font-weight: 500; }
+
+/* ═══════════════════════════════════════
+   EXPERT QUOTE — TALA
+═══════════════════════════════════════ */
+#quote {
+  background: var(--ocean-deep);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.quote-card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: rgba(0,95,138,0.2);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-lg);
+  padding: var(--sp-8) var(--sp-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 8rem;
+  color: var(--sand-gold);
+  opacity: 0.15;
+  font-family: Georgia, serif;
+  line-height: 1;
+  pointer-events: none;
+}
+
+[dir="ltr"] .quote-mark { right: auto; left: 16px; }
+
+.quote-text {
+  font-size: var(--fs-md);
+  color: var(--text-on-dark);
+  line-height: 1.9;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--sp-6);
+  border-right: 3px solid var(--sand-gold);
+  padding-right: var(--sp-5);
+}
+
+[dir="ltr"] .quote-text {
+  border-right: none;
+  border-left: 3px solid var(--sand-gold);
+  padding-right: 0;
+  padding-left: var(--sp-5);
+}
+
+.quote-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin-bottom: var(--sp-5);
+}
+
+.quote-attribution {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quote-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--ocean-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.quote-attr-text { text-align: right; }
+[dir="ltr"] .quote-attr-text { text-align: left; }
+
+.quote-name {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--sand-gold);
+}
+
+.quote-role {
+  font-size: var(--fs-xs);
+  color: var(--ocean-light);
+  margin-top: 2px;
+}
+
+.quote-org {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+/* ═══════════════════════════════════════
+   NESTING SITES
+═══════════════════════════════════════ */
+#sites {
+  background: var(--surface-white);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+  max-width: 900px;
+  margin: 0 auto var(--sp-8);
+}
+
+.site-card {
+  background: var(--surface-white);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1px solid rgba(0,38,58,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.site-card-accent {
+  height: 4px;
+  background: var(--ocean-bright);
+}
+
+.site-card-body {
+  padding: var(--sp-5);
+}
+
+.site-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+
+.site-icon-num {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 1.4rem;
+}
+
+.site-num-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ocean-bright);
+  color: white;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-name {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--sp-2);
+}
+
+.site-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--sp-3);
+}
+
+.site-badge {
+  display: inline-flex;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--r-full);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}
+
+.badge-green { background: rgba(45,106,79,0.12); color: var(--mangrove); border: 1px solid rgba(45,106,79,0.3); }
+.badge-blue { background: rgba(0,96,199,0.1); color: var(--ocean-mid); border: 1px solid rgba(0,96,199,0.3); }
+.badge-teal { background: rgba(0,150,199,0.1); color: var(--ocean-bright); border: 1px solid rgba(0,150,199,0.3); }
+
+.info-banner {
+  background: var(--grad-gold);
+  border-radius: var(--r-md);
+  padding: var(--sp-5);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--ocean-deep);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════════════════
+   CONSERVATION PROGRAM
+═══════════════════════════════════════ */
+#conservation {
+  background: linear-gradient(180deg, #003A5C 0%, #00263A 100%);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.conservation-blocks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  max-width: 900px;
+  margin: 0 auto var(--sp-12);
+}
+
+.cons-block {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-md);
+  padding: var(--sp-6);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cons-block:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.cons-icon { font-size: 2.5rem; margin-bottom: var(--sp-3); }
+
+.cons-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--sand-gold);
+  margin-bottom: var(--sp-3);
+}
+
+.cons-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-on-dark);
+  line-height: 1.8;
+}
+
+/* Timeline */
+.timeline-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--sand-gold);
+  text-align: center;
+  margin-bottom: var(--sp-8);
+}
+
+.timeline-scroll {
+  overflow-x: auto;
+  padding-bottom: var(--sp-4);
+  -webkit-overflow-scrolling: touch;
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+}
+
+.timeline-dot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--sand-gold);
+  border: 2px solid var(--ocean-bright);
+  margin-top: 4px;
+}
+
+.timeline-connector {
+  width: 2px;
+  height: 32px;
+  background: rgba(255,255,255,0.15);
+  margin: 4px 0;
+}
+
+.timeline-item:last-child .timeline-connector { display: none; }
+
+.timeline-year {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--sand-gold);
+  margin-bottom: 2px;
+}
+
+.timeline-event {
+  font-size: var(--fs-sm);
+  color: var(--text-on-dark);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════
+   THREATS
+═══════════════════════════════════════ */
+#threats {
+  background: var(--coral-soft);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.threats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.threat-card {
+  background: var(--surface-white);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border-right: 4px solid;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[dir="ltr"] .threat-card {
+  border-right: none;
+  border-left: 4px solid;
+}
+
+.threat-card.critical { border-color: var(--coral-red); }
+.threat-card.high { border-color: #E07B00; }
+
+.threat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.threat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-4);
+  cursor: pointer;
+  min-height: 72px;
+  gap: var(--sp-2);
+}
+
+.threat-icon { font-size: 1.8rem; flex-shrink: 0; }
+
+.threat-title {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.severity-badge {
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.severity-critical { background: rgba(193,18,31,0.12); color: var(--coral-red); }
+.severity-high { background: rgba(224,123,0,0.12); color: #E07B00; }
+
+.threat-expand-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.threat-card.open .threat-expand-icon { transform: rotate(180deg); }
+
+.threat-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.threat-card.open .threat-body { max-height: 200px; }
+
+.threat-body-inner {
+  padding: 0 var(--sp-4) var(--sp-4);
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════════════════
+   PHOTO GALLERY
+═══════════════════════════════════════ */
+#gallery {
+  background: var(--ocean-deep);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255,255,255,0.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.gallery-item:hover img { transform: scale(1.05); }
+
+.gallery-caption-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,38,58,0.9));
+  padding: var(--sp-4) var(--sp-3) var(--sp-3);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption-overlay { transform: translateY(0); }
+
+.gallery-cap-text {
+  font-size: var(--fs-xs);
+  color: white;
+  font-weight: 500;
+}
+
+/* Mobile tap overlay */
+.gallery-mobile-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,38,58,0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--sp-3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.gallery-mobile-overlay.show {
+  opacity: 1;
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,19,30,0.97);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-inner {
+  position: relative;
+  width: 95vw;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-img-wrap {
+  width: 100%;
+  max-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-img {
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: var(--r-md);
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  margin-top: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--ocean-light);
+  text-align: center;
+  font-weight: 500;
+}
+
+.lb-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.8);
+  color: var(--ocean-deep);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.lb-btn:hover { background: var(--sand-gold); }
+.lb-prev { right: calc(100% + 8px); }
+.lb-next { left: calc(100% + 8px); }
+
+[dir="ltr"] .lb-prev { right: auto; left: calc(100% + 8px); }
+[dir="ltr"] .lb-next { left: auto; right: calc(100% + 8px); }
+
+.lb-close {
+  position: fixed;
+  top: var(--sp-4);
+  left: var(--sp-4);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 9001;
+}
+
+.lb-close:hover { background: rgba(255,255,255,0.2); }
+
+[dir="ltr"] .lb-close { left: auto; right: var(--sp-4); }
+
+/* ═══════════════════════════════════════
+   KEY DATA
+═══════════════════════════════════════ */
+#data {
+  background: var(--sand-light);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.data-infographic {
+  position: relative;
+}
+
+.data-infographic img {
+  width: 100%;
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--sand-gold);
+}
+
+.data-source-tag {
+  margin-top: var(--sp-3);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.data-stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.data-stat-item {
+  background: var(--surface-white);
+  border-radius: var(--r-md);
+  padding: var(--sp-4) var(--sp-5);
+  box-shadow: var(--shadow-sm);
+  border-right: 4px solid var(--sand-gold);
+  display: flex;
+  gap: var(--sp-4);
+  align-items: flex-start;
+  transition: transform 0.2s;
+}
+
+[dir="ltr"] .data-stat-item {
+  border-right: none;
+  border-left: 4px solid var(--sand-gold);
+}
+
+.data-stat-item:hover { transform: translateX(-4px); }
+[dir="ltr"] .data-stat-item:hover { transform: translateX(4px); }
+
+.data-num {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--ocean-bright);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.data-label {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.data-desc {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.data-footer-bar {
+  margin-top: var(--sp-8);
+  background: var(--grad-gold);
+  border-radius: var(--r-md);
+  padding: var(--sp-4) var(--sp-5);
+  text-align: center;
+  color: var(--ocean-deep);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ═══════════════════════════════════════
+   ECOLOGICAL ROLE
+═══════════════════════════════════════ */
+#ecology {
+  background: var(--grad-ocean);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+.ecology-blocks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eco-block {
+  text-align: center;
+  padding: var(--sp-6);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-md);
+  transition: transform 0.3s;
+}
+
+.eco-block:hover { transform: translateY(-4px); }
+
+.eco-icon { font-size: 3rem; margin-bottom: var(--sp-4); }
+
+.eco-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--sand-gold);
+  margin-bottom: var(--sp-3);
+}
+
+.eco-desc {
+  font-size: var(--fs-base);
+  color: var(--text-on-dark);
+  line-height: 1.8;
+}
+
+/* ═══════════════════════════════════════
+   DESIGNER CREDIT
+═══════════════════════════════════════ */
+#designer {
+  background: #001E30;
+  padding: var(--sp-12) var(--sp-4);
+}
+
+.designer-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0,95,138,0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: var(--r-lg);
+  padding: var(--sp-8) var(--sp-6);
+  text-align: center;
+}
+
+.designer-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+
+.designer-divider-line {
+  height: 1px;
+  width: 48px;
+  background: rgba(255,255,255,0.15);
+}
+
+.designer-icon-mid { font-size: 1.2rem; }
+
+.designer-label {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--sp-3);
+  font-weight: 600;
+}
+
+.designer-name {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--sp-2);
+}
+
+.designer-role {
+  font-size: var(--fs-sm);
+  color: var(--ocean-light);
+  margin-bottom: var(--sp-5);
+}
+
+.designer-hr {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: var(--sp-5) 0;
+}
+
+.designer-info {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.designer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  margin-top: var(--sp-5);
+  font-size: 1.4rem;
+}
+
+.designer-icons span {
+  transition: transform 0.2s, filter 0.2s;
+  cursor: default;
+}
+
+.designer-icons span:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 6px rgba(0,150,199,0.6));
+}
+
+/* ═══════════════════════════════════════
    FOOTER
-═══════════════════════════════════════════ */
-footer{
-  background:var(--deep);
-  border-top:1px solid rgba(255,255,255,.06);
-  padding:80px 24px 40px;
-  position:relative;overflow:hidden;
+═══════════════════════════════════════ */
+#footer {
+  background: #00131E;
+  padding: var(--sp-10) var(--sp-4) 0;
 }
-footer::before{
-  content:'';position:absolute;
-  width:600px;height:600px;
-  background:radial-gradient(circle,rgba(11,123,122,.08),transparent 70%);
-  bottom:-200px;right:-100px;pointer-events:none;
-}
-.footer-grid{
-  max-width:900px;margin:0 auto;
-  display:grid;grid-template-columns:1.4fr 1fr 1fr;
-  gap:48px;padding-bottom:48px;
-  border-bottom:1px solid rgba(255,255,255,.06);
-  margin-bottom:36px;
-  position:relative;z-index:1;
-}
-.footer-brand .emoji{font-size:48px;margin-bottom:16px;display:block}
-.footer-brand h2{
-  font-family:var(--display);font-size:1.5rem;
-  color:var(--white);margin-bottom:4px;
-}
-.footer-brand p{
-  font-family:var(--serif);font-style:italic;
-  font-size:.88rem;color:var(--g4);margin-bottom:20px;
-}
-.footer-brand .org{
-  font-size:.82rem;color:var(--g3);line-height:2;
-}
-.footer-brand .org strong{color:var(--gold-l);display:block;font-size:.9rem}
-.footer-col h4{
-  font-family:var(--en);font-size:.68rem;
-  font-weight:700;text-transform:uppercase;
-  letter-spacing:2px;color:var(--teal-l);
-  margin-bottom:16px;
-}
-.footer-director{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;padding:22px;
-}
-.footer-director .av{
-  width:50px;height:50px;border-radius:50%;
-  background:linear-gradient(135deg,var(--teal),var(--teal-l));
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;margin-bottom:12px;
-}
-.footer-director .nm{
-  font-weight:800;font-size:.92rem;
-  color:var(--white);margin-bottom:4px;
-}
-.footer-director .rl{
-  font-size:.72rem;color:var(--g4);line-height:1.6;
-}
-.footer-director .rl-en{
-  font-family:var(--en);font-size:.65rem;
-  color:var(--g4);direction:ltr;
-  display:block;margin-top:4px;opacity:.6;
-}
-.footer-tallab{
-  background:rgba(200,146,58,.06);
-  border:1px solid rgba(200,146,58,.12);
-  border-radius:16px;padding:22px;
-}
-.footer-tallab .av2{
-  width:50px;height:50px;border-radius:50%;
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;margin-bottom:12px;
-}
-.footer-tallab .nm{
-  font-weight:800;font-size:.88rem;
-  color:var(--white);margin-bottom:4px;
-}
-.footer-tallab .rl{font-size:.7rem;color:var(--g4);line-height:1.6}
-.footer-bottom{
-  max-width:900px;margin:0 auto;
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:12px;
-  position:relative;z-index:1;
-}
-.footer-bottom .copy{
-  font-family:var(--en);font-size:.7rem;
-  color:rgba(255,255,255,.2);letter-spacing:.3px;
-}
-.footer-bottom .designer{
-  font-size:.72rem;color:rgba(255,255,255,.25);
-}
-.footer-bottom .designer span{color:var(--teal-l);font-weight:600}
 
-/* ═══════════════════════════════════════════
-   LIGHTBOX
-═══════════════════════════════════════════ */
-.lb{
-  position:fixed;inset:0;z-index:9998;
-  background:rgba(0,0,0,.96);
-  backdrop-filter:blur(24px);
-  display:none;align-items:center;justify-content:center;
-  padding:20px;
+.footer-upper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  padding-bottom: var(--sp-8);
 }
-.lb.open{display:flex}
-.lb img{
-  max-width:92vw;max-height:86vh;
-  object-fit:contain;border-radius:16px;
-  box-shadow:0 0 100px rgba(0,0,0,.8);
-  cursor:default;
-}
-.lb-close{
-  position:fixed;top:20px;right:20px;
-  width:44px;height:44px;border-radius:50%;
-  background:rgba(255,255,255,.1);
-  border:1px solid rgba(255,255,255,.15);
-  color:var(--white);font-size:18px;
-  display:flex;align-items:center;justify-content:center;
-  cursor:none;transition:background .2s;z-index:1;
-}
-.lb-close:hover{background:rgba(255,255,255,.2)}
 
-/* ═══════════════════════════════════════════
-   REVEAL
-═══════════════════════════════════════════ */
-.r{
-  opacity:0;transform:translateY(32px);
-  transition:opacity .75s var(--ease),transform .75s var(--ease);
+.footer-logo-block .nav-logo {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  margin-bottom: var(--sp-3);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text-on-dark);
 }
-.r.in{opacity:1;transform:none}
-.r[data-d="1"]{transition-delay:.1s}
-.r[data-d="2"]{transition-delay:.2s}
-.r[data-d="3"]{transition-delay:.3s}
-.r[data-d="4"]{transition-delay:.4s}
 
-/* ═══════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════ */
-@media(max-width:720px){
-  .stats-inner{grid-template-columns:repeat(2,1fr)}
-  .stat-col{border-bottom:1px solid rgba(255,255,255,.06)}
-  .feat-grid{grid-template-columns:1fr}
-  .gallery-masonry{grid-template-columns:repeat(2,1fr)}
-  .gitem-a{grid-column:span 2;min-height:220px;aspect-ratio:16/9}
-  .glass{padding:24px 20px}
-  .footer-grid{grid-template-columns:1fr}
-  .iucn-inner{flex-direction:column;text-align:center;gap:14px}
-  .hero-quote-bar{padding:14px 24px}
-  .lang-pill{left:24px}
-  .tl{padding-right:34px}
-  .tl::before{right:12px}
-  .tl-item::before{right:-28px}
-  .footer-bottom{flex-direction:column;text-align:center}
-  body{cursor:auto}
-  .cursor{display:none}
+.footer-org {
+  font-size: var(--fs-sm);
+  color: var(--ocean-light);
+  line-height: 1.7;
+  margin-bottom: var(--sp-4);
 }
-@media(max-width:420px){
-  .gallery-masonry{gap:6px}
-  .stats-inner{grid-template-columns:1fr 1fr}
-  .hero-center{padding-bottom:70px}
+
+.footer-iucn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--coral-red);
+  color: white;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: var(--r-full);
+}
+
+.footer-links-title {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--sand-gold);
+  margin-bottom: var(--sp-4);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.footer-link {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  padding: var(--sp-2) 0;
+  transition: color 0.2s;
+}
+
+.footer-link:hover { color: var(--sand-gold); }
+
+.footer-lower {
+  background: rgba(0,0,0,0.3);
+  text-align: center;
+  padding: var(--sp-5) var(--sp-4);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-copy {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-2);
+  font-size: var(--fs-xs);
+  color: var(--ocean-light);
+}
+
+/* ═══════════════════════════════════════
+   STICKY BOTTOM BAR
+═══════════════════════════════════════ */
+#sticky-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(0,38,58,0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 700;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.sticky-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 48px;
+  min-height: 48px;
+  padding: var(--sp-1) var(--sp-3);
+  background: none;
+  border: none;
+  color: var(--text-on-dark);
+  font-size: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: var(--r-sm);
+  transition: background 0.2s, color 0.2s;
+}
+
+.sticky-btn:hover { background: rgba(255,255,255,0.08); color: var(--sand-gold); }
+.sticky-btn-icon { font-size: 1.2rem; }
+
+.sticky-lang-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-full);
+  padding: var(--sp-2) var(--sp-4);
+  color: var(--text-on-dark);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  min-height: 40px;
+  transition: background 0.2s;
+}
+
+.sticky-lang-btn:hover { background: rgba(255,255,255,0.15); }
+
+/* ═══════════════════════════════════════
+   TABLET BREAKPOINT (768px+)
+═══════════════════════════════════════ */
+@media (min-width: 768px) {
+  #navbar { height: 72px; padding: 0 var(--sp-8); }
+  #navbar.scrolled { height: 64px; }
+
+  .hamburger { display: none; }
+  
+  /* Desktop nav links */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+
+  .desktop-nav-link {
+    padding: var(--sp-2) var(--sp-3);
+    color: var(--text-on-dark);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    border-radius: var(--r-sm);
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+
+  .desktop-nav-link:hover { background: rgba(255,255,255,0.08); color: var(--sand-gold); }
+  .desktop-nav-link.active { color: var(--sand-gold); }
+
+  .nav-lang-toggle {
+    display: flex;
+    padding: var(--sp-2) var(--sp-4);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: var(--r-full);
+    color: var(--text-on-dark);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    min-height: 36px;
+    align-items: center;
+    gap: var(--sp-1);
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .nav-lang-toggle:hover { background: rgba(255,255,255,0.15); }
+
+  .stats-grid { grid-template-columns: repeat(5, 1fr); }
+  .stats-grid .stat-card:last-child:nth-child(odd) { grid-column: auto; max-width: none; }
+
+  .hero-buttons { flex-direction: row; max-width: 100%; }
+
+  .about-grid { grid-template-columns: 1fr 1fr; }
+
+  .sites-grid { grid-template-columns: 1fr 1fr; }
+
+  .conservation-blocks { grid-template-columns: repeat(3, 1fr); }
+
+  .threats-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .data-grid { grid-template-columns: 1fr 1fr; }
+
+  .ecology-blocks { grid-template-columns: repeat(3, 1fr); }
+
+  .footer-upper { grid-template-columns: 1fr 1fr; }
+
+  #sticky-bottom-bar { display: none; }
+
+  .timeline-list { flex-direction: row; gap: var(--sp-2); }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+  }
+
+  .timeline-dot-wrap {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .timeline-connector {
+    width: 100%;
+    height: 2px;
+    margin: 0 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sites-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Desktop hide hamburger, show desktop nav */
+.desktop-nav { display: none; }
+.nav-lang-toggle { display: none; }
+
+/* ═══════════════════════════════════════
+   UTILITY
+═══════════════════════════════════════ */
+.text-gold { color: var(--sand-gold); }
+.text-light { color: var(--text-on-dark); }
+.text-muted-clr { color: var(--text-muted); }
+.mt-auto { margin-top: auto; }
+
+.section-spacing { padding: var(--sp-16) var(--sp-4); }
+
+/* Body bottom padding for sticky bar on mobile */
+@media (max-width: 767px) {
+  body { padding-bottom: 56px; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══ CURSOR ═══ -->
-<div class="cursor" id="cd"><div class="cursor-dot"></div></div>
-<div class="cursor" id="cr"><div class="cursor-ring"></div></div>
+<!-- Reading Progress Bar -->
+<div id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-<!-- ═══ LOADER ═══ -->
-<div id="loader">
-  <div class="loader-turtle">🐢</div>
-  <div class="loader-bar"><div class="loader-fill"></div></div>
-  <div class="loader-txt">Loading · درحال بارگذاری</div>
-</div>
+<!-- ═══════════════════════════════════════
+     LOADING SCREEN
+═══════════════════════════════════════ -->
+<div id="loading-screen" role="dialog" aria-modal="true" aria-label="Loading">
 
-<!-- ═══════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════ -->
-<section class="hero">
+  <!-- Phase A: Animation -->
+  <div id="phase-a">
+    <div class="turtle-container">
+      <!-- Bubbles -->
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
 
-  <!-- عکس اصلی لاک‌پشت -->
-  <img src="images/hero.jpg"
-       alt="لاک‌پشت منقار عقابی · پارک ملی دیر نخیلو · خلیج فارس"
-       class="hero-img"
-       fetchpriority="high">
-
-  <div class="hero-gradient"></div>
-  <div class="hero-noise"></div>
-  <div class="hero-scan"></div>
-
-  <!-- نوار نقل‌قول بالا -->
-  <div class="hero-quote-bar">
-    <div class="line"></div>
-    <p>
-      «هر بازدیدکننده‌ای که امروز این صفحه را می‌خواند، شریک ما در حفاظت از میراث طبیعی خلیج فارس است»
-    </p>
-  </div>
-
-  <!-- زبان -->
-  <div class="lang-pill" style="top:18px;left:auto;right:40px;position:absolute">
-    <button class="on" onclick="setLang('fa')" id="btn-fa">فارسی</button>
-    <button onclick="setLang('en')" id="btn-en">EN</button>
-  </div>
-
-  <!-- محتوای مرکزی -->
-  <div class="hero-center">
-    <div class="hero-eyebrow">
-      <span class="dot"></span>
-      <span data-fa="Critically Endangered · خلیج فارس · ایران" data-en="Critically Endangered · Persian Gulf · Iran">Critically Endangered · خلیج فارس · ایران</span>
+      <!-- SVG Turtle -->
+      <svg class="turtle-svg" width="140" height="100" viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Body -->
+        <ellipse cx="72" cy="50" rx="32" ry="22" fill="#2D6A4F" opacity="0.9"/>
+        <!-- Shell pattern -->
+        <ellipse cx="72" cy="50" rx="26" ry="17" fill="#1B4332" opacity="0.6"/>
+        <line x1="72" y1="33" x2="72" y2="67" stroke="#2D6A4F" stroke-width="1.5" opacity="0.5"/>
+        <line x1="46" y1="50" x2="98" y2="50" stroke="#2D6A4F" stroke-width="1.5" opacity="0.5"/>
+        <!-- Head (beak) -->
+        <ellipse cx="105" cy="46" rx="10" ry="8" fill="#40916C"/>
+        <path d="M114 43 L122 42 L120 47 L114 48 Z" fill="#52B788"/>
+        <!-- Front flippers -->
+        <g class="flipper-front">
+          <path d="M70 33 Q58 18 42 22 Q50 32 63 36 Z" fill="#40916C" opacity="0.85"/>
+        </g>
+        <!-- Back flippers -->
+        <g class="flipper-back">
+          <path d="M70 67 Q58 82 42 78 Q50 68 63 64 Z" fill="#40916C" opacity="0.85"/>
+        </g>
+        <!-- Right front flipper -->
+        <path d="M70 33 Q82 18 98 22 Q90 32 77 36 Z" fill="#40916C" opacity="0.85"/>
+        <!-- Right back flipper -->
+        <path d="M70 67 Q82 82 98 78 Q90 68 77 64 Z" fill="#40916C" opacity="0.85"/>
+        <!-- Tail -->
+        <path d="M41 50 Q30 50 24 52 Q30 56 41 54 Z" fill="#40916C" opacity="0.7"/>
+        <!-- Eye -->
+        <circle cx="109" cy="44" r="2.5" fill="#0D1B2A"/>
+        <circle cx="110" cy="43" r="1" fill="white" opacity="0.7"/>
+      </svg>
     </div>
 
-    <h1 class="hero-title">لاک‌پشت منقار عقابی</h1>
-    <p class="hero-title-en">Hawksbill Sea Turtle</p>
-    <p class="hero-sci">Eretmochelys imbricata — Linnaeus, 1766</p>
+    <h1 class="loading-title" id="load-title-fa">لاک‌پشت دریایی منقار عقابی</h1>
+    <p class="loading-title" id="load-title-en" style="font-size:var(--fs-lg); margin-top: -8px; font-weight:600;">Hawksbill Sea Turtle</p>
+    <p class="loading-subtitle">Bushehr Province | استان بوشهر</p>
 
-    <div class="hero-divider"></div>
-
-    <p class="hero-opening-statement">
-      در اعماق آرام خلیج فارس، موجودی کهن‌سال با <strong>صد میلیون سال حضور</strong> بر زمین، امروز بر لبه انقراض ایستاده است.
-      بوشهر پاسدار این گونه است.
-    </p>
+    <div class="progress-container">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <p class="progress-text" id="progress-text">۰٪</p>
+    </div>
   </div>
 
-  <div class="scroll-cue">
-    <div class="scroll-cue-line"></div>
-    <span class="scroll-cue-lbl">Scroll</span>
+  <!-- Phase B: Management Message -->
+  <div id="phase-b">
+    <div class="welcome-card">
+      <div class="seal-circle">🐢</div>
+      <p class="seal-label" id="seal-label-text">پیام مدیریت | Management Message</p>
+
+      <p class="welcome-message" id="welcome-msg-fa">
+        «لاک‌پشت دریایی منقار عقابی، میراثی زنده از طبیعت بی‌همتای خلیج فارس است. حفاظت از این گونه ارزشمند، رسالتی ملی و انسانی است که استان بوشهر با افتخار آن را بر دوش می‌کشد. با پایش مستمر، نشانه‌گذاری علمی و همکاری همه دستگاه‌ها، راه را برای آینده‌ای امن‌تر برای این گونه می‌گشاییم.»
+      </p>
+      <p class="welcome-message" id="welcome-msg-en" style="display:none; font-size:var(--fs-xs);">
+        "The Hawksbill Sea Turtle is a living heritage of the Persian Gulf's unparalleled nature. Protecting this precious species is a national duty that Bushehr Province carries with pride. Through continuous monitoring, scientific tagging, and cross-agency cooperation, we pave the way toward a safer future for this species."
+      </p>
+
+      <div class="welcome-divider"></div>
+
+      <div class="attribution-row">
+        <div class="avatar-circle" id="load-avatar">ع.م</div>
+        <div class="attribution-text">
+          <p class="attribution-name" id="load-name">عبدالرحمن مرادزاده | Abdolrahman Moradzadeh</p>
+          <p class="attribution-title" id="load-title-attr">مدیرکل حفاظت محیط زیست استان بوشهر</p>
+          <p class="attribution-title" style="font-size:10px;">Director General, Bushehr Province Dept. of Environment</p>
+        </div>
+      </div>
+
+      <button class="enter-btn" id="enter-btn" aria-label="Enter Website">
+        <span id="enter-btn-text">ورود به سایت</span>
+        <span>←</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     MAIN CONTENT (hidden until loading done)
+═══════════════════════════════════════ -->
+<div id="main-content" style="opacity:0; transition: opacity 0.5s ease;">
+
+<!-- NAVBAR -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-logo">
+      <span class="nav-logo-icon">🐢</span>
+      <span data-key="navBrand">منقار عقابی | Hawksbill</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <div class="desktop-nav" id="desktop-nav">
+      <a href="#hero" class="desktop-nav-link" data-key="navHome">خانه</a>
+      <a href="#about" class="desktop-nav-link" data-key="navAbout">معرفی گونه</a>
+      <a href="#conservation" class="desktop-nav-link" data-key="navConservation">حفاظت</a>
+      <a href="#sites" class="desktop-nav-link" data-key="navSites">زیستگاه‌ها</a>
+      <a href="#gallery" class="desktop-nav-link" data-key="navGallery">گالری</a>
+      <a href="#data" class="desktop-nav-link" data-key="navData">داده‌ها</a>
+      <button class="nav-lang-toggle" id="nav-lang-btn" aria-label="Toggle Language">
+        <span id="nav-lang-text">🇬🇧 English</span>
+      </button>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Full-screen Menu -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+  <ul class="mobile-menu-items">
+    <li><a href="#hero" class="mobile-nav-item" data-menu-item><span class="nav-icon">🏠</span><span data-key="navHome">خانه | Home</span></a></li>
+    <li><a href="#about" class="mobile-nav-item" data-menu-item><span class="nav-icon">🐢</span><span data-key="navAboutFull">معرفی گونه | About Species</span></a></li>
+    <li><a href="#conservation" class="mobile-nav-item" data-menu-item><span class="nav-icon">🛡️</span><span data-key="navConsFull">حفاظت | Conservation</span></a></li>
+    <li><a href="#sites" class="mobile-nav-item" data-menu-item><span class="nav-icon">📍</span><span data-key="navSitesFull">زیستگاه‌ها | Nesting Sites</span></a></li>
+    <li><a href="#gallery" class="mobile-nav-item" data-menu-item><span class="nav-icon">🖼️</span><span data-key="navGalleryFull">گالری | Gallery</span></a></li>
+    <li><a href="#data" class="mobile-nav-item" data-menu-item><span class="nav-icon">📊</span><span data-key="navDataFull">داده‌ها | Data</span></a></li>
+    <li><a href="#footer" class="mobile-nav-item" data-menu-item><span class="nav-icon">ℹ️</span><span data-key="navAboutUs">درباره ما | About Us</span></a></li>
+  </ul>
+  <button class="menu-lang-toggle" id="menu-lang-btn" aria-label="Toggle Language">
+    <span id="menu-lang-text">🇬🇧 English</span>
+  </button>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="hero" aria-label="Hero Section">
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <!-- Floating Particles -->
+  <div class="particle" style="width:8px;height:8px;top:20%;left:10%;opacity:0.2;animation:bubble-rise 4s ease-in infinite;"></div>
+  <div class="particle" style="width:5px;height:5px;top:40%;left:85%;opacity:0.15;animation:bubble-rise 5s ease-in 1s infinite;"></div>
+  <div class="particle" style="width:12px;height:12px;top:60%;left:20%;opacity:0.1;animation:bubble-rise 6s ease-in 2s infinite;"></div>
+  <div class="particle" style="width:6px;height:6px;top:30%;left:70%;opacity:0.25;animation:bubble-rise 4.5s ease-in 0.5s infinite;"></div>
+  <div class="particle" style="width:4px;height:4px;top:70%;left:50%;opacity:0.18;animation:bubble-rise 5.5s ease-in 1.5s infinite;"></div>
+  <div class="particle" style="width:10px;height:10px;top:15%;left:55%;opacity:0.12;animation:bubble-rise 7s ease-in 3s infinite;"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span>🐢</span>
+      <span data-key="heroBadge">نماد حیات‌وحش استان بوشهر | Wildlife Symbol of Bushehr Province</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span data-key="heroTitle">لاک‌پشت دریایی منقار عقابی</span>
+    </h1>
+    <p class="hero-scientific">Eretmochelys imbricata</p>
+
+    <div class="hero-iucn-badge">
+      <div class="hero-dot"></div>
+      <span data-key="iucnBadge">در معرض خطر شدید انقراض | CRITICALLY ENDANGERED</span>
+    </div>
+
+    <p class="hero-desc" data-key="heroDesc">
+      گونه‌ای کهن که میلیون‌ها سال در خلیج فارس زیسته — An ancient species that has roamed the Persian Gulf for millions of years
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#about" class="btn-primary" data-key="heroCta1">بیشتر بدانید | Learn More</a>
+      <a href="#gallery" class="btn-secondary" data-key="heroCta2">مشاهده گالری | View Gallery</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span class="scroll-chevron">⌄</span>
+    <span data-key="scrollLabel">اسکرول کنید | Scroll</span>
+  </div>
+
+  <!-- Wave Divider -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#FFF8E7"/>
+    </svg>
   </div>
 </section>
 
-<!-- ═══ WAVE ═══ -->
-<div class="wave-wrap">
-  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#020D18"/>
-  </svg>
-</div>
-
-<!-- ═══ STATS ═══ -->
-<div class="stats">
-  <div class="stats-inner r">
-    <div class="stat-col">
-      <div class="stat-n" data-target="2400">0<em>+</em></div>
-      <div class="stat-l" data-fa="لاک‌پشت نشانه‌گذاری‌شده" data-en="Tagged Turtles">لاک‌پشت نشانه‌گذاری‌شده</div>
+<!-- ═══════════════════════════════════════
+     STATISTICS
+═══════════════════════════════════════ -->
+<section id="stats" aria-label="Achievement Statistics" class="fade-in-section">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">🏷️</div>
+      <div class="stat-number" data-count="2400" data-suffix="+">۰</div>
+      <div class="stat-label" data-key="stat1">لاک‌پشت نشانه‌گذاری‌شده | Turtles Tagged</div>
     </div>
-    <div class="stat-col">
-      <div class="stat-n" data-target="15">0</div>
-      <div class="stat-l" data-fa="سال پایش مستمر" data-en="Years Monitoring">سال پایش مستمر</div>
+    <div class="stat-card">
+      <div class="stat-icon">🔄</div>
+      <div class="stat-number" data-count="700" data-suffix="+">۰</div>
+      <div class="stat-label" data-key="stat2">بازگشت ثبت‌شده | Return Records</div>
     </div>
-    <div class="stat-col">
-      <div class="stat-n" data-target="700">0<em>+</em></div>
-      <div class="stat-l" data-fa="بازگشت ثبت‌شده به ساحل" data-en="Recorded Beach Returns">بازگشت ثبت‌شده به ساحل</div>
+    <div class="stat-card">
+      <div class="stat-icon">📅</div>
+      <div class="stat-number" data-count="15" data-suffix="">۰</div>
+      <div class="stat-label" data-key="stat3">سال پایش مستمر | Years Monitoring</div>
     </div>
-    <div class="stat-col">
-      <div class="stat-n" data-target="5">0</div>
-      <div class="stat-l" data-fa="زیستگاه تحت پایش" data-en="Monitored Habitats">زیستگاه تحت پایش</div>
+    <div class="stat-card">
+      <div class="stat-icon">📍</div>
+      <div class="stat-number" data-count="5" data-suffix="">۰</div>
+      <div class="stat-label" data-key="stat4">زیستگاه فعال | Active Sites</div>
     </div>
-  </div>
-</div>
-
-<!-- ═══ IUCN ═══ -->
-<div class="wrap" style="padding-top:0">
-  <div class="iucn r">
-    <div class="iucn-inner">
-      <div class="iucn-badge">
-        <div class="code">CR</div>
-        <div class="sub">IUCN</div>
-      </div>
-      <div class="iucn-text">
-        <h3 data-fa="وضعیت حفاظتی: به‌شدت در معرض خطر انقراض" data-en="Conservation Status: Critically Endangered">وضعیت حفاظتی: به‌شدت در معرض خطر انقراض</h3>
-        <p data-fa="روند کاهش جمعیت جهانی این گونه نگران‌کننده و شتابان است · از هر هزار نوزاد، تنها یک تا دو عدد به بلوغ می‌رسند" data-en="روند کاهش جمعیت جهانی این گونه نگران‌کننده و شتابان است · از هر هزار نوزاد، تنها یک تا دو عدد به بلوغ می‌رسند">روند کاهش جمعیت جهانی این گونه نگران‌کننده و شتابان است · از هر هزار نوزاد، تنها یک تا دو عدد به بلوغ می‌رسند</p>
-        <p class="en-txt">IUCN Red List · Critically Endangered (CR) · Of every 1,000 hatchlings, only 1–2 reach reproductive age</p>
-      </div>
+    <div class="stat-card">
+      <div class="stat-icon">📊</div>
+      <div class="stat-number" data-count="30" data-suffix="٪">۰</div>
+      <div class="stat-label" data-key="stat5">نرخ شناسایی | ID Rate</div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ═══ ABOUT ═══ -->
-<div class="wrap">
-  <section class="s">
-    <div class="r">
-      <div class="overline">About the Species</div>
-      <h2 class="h2">نماد حیات‌وحش استان بوشهر</h2>
-      <p class="h2-en">Official Wildlife Emblem of Bushehr Province · Persian Gulf</p>
+<!-- ═══════════════════════════════════════
+     ABOUT SPECIES
+═══════════════════════════════════════ -->
+<section id="about" aria-label="About the Species" class="fade-in-section">
+  <div class="about-grid">
+    <div class="about-image-wrap">
+      <img src="images/infographic.jpg" alt="اینفوگرافیک لاک‌پشت منقار عقابی | Hawksbill Sea Turtle Infographic" loading="lazy">
+      <p class="image-caption" data-key="infoCap">اینفوگرافیک | Infographic — اداره کل محیط زیست استان بوشهر</p>
     </div>
 
-    <div class="glass r" style="margin-top:32px" data-d="1">
-      <div class="badge fa">فارسی</div>
-      <p class="p-fa">
-        لاک‌پشت دریایی منقار عقابی به‌عنوان <strong>نماد حیات‌وحش استان بوشهر</strong> معرفی شده است؛ انتخابی که هم بازتاب‌دهنده ارزش‌های بوم‌شناختی این منطقه و هم یادآور ضرورت حفاظت از یکی از در معرض‌تهدیدترین گونه‌های دریایی جهان است.
-      </p>
-      <p class="p-fa">
-        <strong>پارک ملی دیر ـ نخیلو</strong> در سواحل خلیج فارس، از مهم‌ترین زیستگاه‌های تخم‌گذاری لاک‌پشت‌های منقار عقابی در کشور به شمار می‌آید و آب‌های کم‌عمق آن، محل تغذیه ارزشمندی برای لاک‌پشت‌های سبز است. جزایر غیرمسکونی اُم‌الگُرم و نخیلو که از حضور شکارگرانی مانند روباه و شغال خالی هستند، سواحلی بکر و امن را برای لانه‌گزینی این گونه فراهم کرده‌اند.
-      </p>
-      <p class="p-fa" style="margin-bottom:0">
-        از آنجا که تنها بخش بسیار اندکی از نوزادان این گونه تا سن بلوغ زنده می‌مانند، از دست رفتن هر بخش از زیستگاه‌های تخم‌گذاری می‌تواند پیامدهایی <strong>جبران‌ناپذیر</strong> به همراه داشته باشد.
-      </p>
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,.07);margin:22px 0">
-      <details>
-        <summary style="cursor:pointer;font-family:var(--en);font-weight:600;color:var(--teal-l);font-size:.82rem;list-style:none;display:flex;align-items:center;gap:8px;padding:4px 0">
-          📖 Read in English
-        </summary>
-        <div style="margin-top:14px">
-          <div class="badge en">English</div>
-          <p class="p-en">The Hawksbill sea turtle has emerged as the official wildlife emblem of Bushehr Province, a choice that reflects both the ecological value of the region and the urgent need to conserve one of the world's most threatened marine species. Located along the Persian Gulf coast, Dayyer–Nakhiloo National Park serves as one of the country's most significant nesting grounds, while its shallow coastal waters provide rich foraging areas for Green turtles. The uninhabited islands of Om-al-Gorm and Nakhiloo, free from terrestrial predators such as foxes and jackals, offer rare undisturbed beaches where turtles can safely lay their eggs.</p>
+    <div class="about-text">
+      <div class="section-header">
+        <h2 class="section-title text-gold" data-key="aboutTitle" style="color: var(--ocean-mid);">معرفی لاک‌پشت منقار عقابی</h2>
+        <div class="section-divider">
+          <div class="divider-line"></div>
+          <span>🐢</span>
+          <div class="divider-line"></div>
         </div>
-      </details>
-    </div>
-  </section>
-</div>
+      </div>
 
-<!-- ═══ FEATURE CARDS ═══ -->
-<div class="wrap" style="padding-top:0">
-  <div class="feat-grid">
-    <div class="feat-card r" data-d="1">
-      <div class="feat-icon">🏝️</div>
-      <h4>زیستگاه تخم‌گذاری</h4>
-      <p>پارک ملی دیر ـ نخیلو و جزایر اُم‌الگُرم و نخیلو، سواحلی بکر و عاری از شکارگر برای لانه‌گزینی فراهم می‌کنند.</p>
-      <p class="en">Dayyer–Nakhiloo NP — predator-free nesting beaches along the Persian Gulf coast.</p>
-    </div>
-    <div class="feat-card r" data-d="2">
-      <div class="feat-icon">🚨</div>
-      <h4>تهدیدهای اصلی</h4>
-      <p>صیادی فشرده و توسعه شتابان سواحل زیستگاه‌ها را تکه‌تکه کرده و چرخه‌های حیاتی را مختل می‌کند.</p>
-      <p class="en">Intensive fishing and rapid coastal development fragment habitats and disrupt life cycles.</p>
-    </div>
-    <div class="feat-card r" data-d="3">
-      <div class="feat-icon">🌊</div>
-      <h4>نقش بوم‌شناختی</h4>
-      <p>با تغذیه از اسفنج‌ها سلامت مرجان‌ها را حفظ کرده و تعادل زنجیره غذایی اکوسیستم دریایی را برقرار می‌کنند.</p>
-      <p class="en">Feeding on sponges maintains healthy coral reefs and marine trophic balance.</p>
-    </div>
-    <div class="feat-card r" data-d="4">
-      <div class="feat-icon">🛡️</div>
-      <h4>پایش و نشانه‌گذاری</h4>
-      <p>تگ‌گذاری فلزی فردی برای شناسایی هر لاک‌پشت و پیگیری بازگشت‌های مکرر به همان ساحل در سال‌های متوالی.</p>
-      <p class="en">Individual metal tagging tracks multi-year beach-return fidelity in this population.</p>
-    </div>
-  </div>
-</div>
+      <p class="about-para" data-key="aboutP1">
+        لاک‌پشت منقار عقابی (Eretmochelys imbricata) با نامش از منقار باریک و تیز شبیه به عقاب شناخته می‌شود. این گونه کهن بیش از ۱۰۰ میلیون سال است که اقیانوس‌های جهان را می‌پیماید و امروز در آستانه انقراض قرار دارد.
+      </p>
 
-<!-- ═══ IMAGE BREAK ═══ -->
-<div class="img-break r">
-  <img src="images/gallery1.jpg" alt="لاک‌پشت منقار عقابی در خلیج فارس" loading="lazy">
-  <div class="img-break-overlay"></div>
-  <div class="img-break-txt">
-    <p>«این جانوران تقریباً تمام عمر خود را در دریا می‌گذرانند — تنها در لحظه تخم‌گذاری به ساحل می‌آیند»</p>
-  </div>
-</div>
+      <p class="about-para" data-key="aboutP2">
+        این لاک‌پشت‌ها معماران اصلی اکوسیستم‌های مرجانی هستند. با تغذیه از اسفنج‌ها، از خفه‌شدن مرجان‌ها جلوگیری می‌کنند. تقریباً تمام عمرشان را در دریا می‌گذرانند و تنها ماده‌ها برای تخم‌گذاری به ساحل می‌آیند.
+      </p>
 
-<!-- ═══ DATA BAND ═══ -->
-<div class="data-band r">
-  <div class="big-num">30%</div>
-  <div class="big-lbl" data-fa="شناسایی موفق از کل جمعیت ماده‌های لانه‌گزین استان بوشهر" data-en="Individual identification rate of nesting females across Bushehr Province">شناسایی موفق از کل جمعیت ماده‌های لانه‌گزین استان بوشهر</div>
-  <div class="big-sub">30% Individual Identification Rate · Nesting Females · Bushehr Province</div>
-</div>
-
-<!-- ═══ FULL STORY ═══ -->
-<div class="wrap">
-  <section class="s">
-    <div class="r">
-      <div class="overline">Full Conservation Story</div>
-      <h2 class="h2">شرح کامل</h2>
-      <p class="h2-en">The Complete Story of Conservation in the Persian Gulf</p>
-    </div>
-
-    <div class="glass r" style="margin-top:32px">
-      <p class="p-fa">
-        لاک‌پشت منقار عقابی در فهرست گونه‌های <strong>به‌شدت در معرض خطر انقراض</strong> قرار دارد و روند کاهش جمعیت آن در سطح جهانی نگران‌کننده است. از آنجا که تنها بخش بسیار اندکی از نوزادان این گونه تا سن بلوغ زنده می‌مانند، از دست رفتن هر بخش از زیستگاه‌های تخم‌گذاری می‌تواند پیامدهایی جبران‌ناپذیر به همراه داشته باشد.
-      </p>
-      <p class="p-fa">
-        امروزه مهم‌ترین تهدیدهای این گونه ناشی از <strong>صیادی فشرده و توسعه شتابان سواحل</strong> است. برداشت بی‌رویه از منابع دریایی همراه با گسترش سکونتگاه‌ها و پروژه‌های عمرانی در نوار ساحلی، موجب تکه‌تکه شدن زیستگاه‌ها و اختلال در چرخه‌های حیاتی لاک‌پشت‌ها می‌شود؛ آسیبی که جبران آن ممکن است دهه‌ها زمان ببرد.
-      </p>
-      <p class="p-fa">
-        فراتر از ارزش نمادین، لاک‌پشت‌های دریایی نقش مهمی در <strong>پایداری اکوسیستم‌های دریایی</strong> دارند. آن‌ها با تغذیه از گونه‌های پررشد، از جمله اسفنج‌ها، به حفظ سلامت زیست‌بوم‌های مرجانی و تعادل سطوح تغذیه‌ای کمک می‌کنند.
-      </p>
-      <p class="p-fa">
-        با توجه به حساسیت بالای این زیستگاه‌ها، این منطقه ابتدا به‌عنوان «منطقه حفاظت‌شده» معرفی شد و در <strong>میانه دهه ۱۳۸۰ به پارک ملی ارتقا یافت</strong> تا امکان مدیریت و حفاظت مؤثرتر فراهم شود.
-      </p>
-      <p class="p-fa" style="margin-bottom:0">
-        پس از بیش از <strong>پانزده سال تلاش پیوسته حفاظتی و پایشی</strong>، کارشناسان بر این باورند که تداوم این اقدامات می‌تواند آینده‌ای امن‌تر برای لاک‌پشت منقار عقابی در سواحل جنوبی ایران رقم بزند و این نماد زنده از میراث طبیعی بوشهر را برای نسل‌های آینده حفظ کند.
-      </p>
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,.07);margin:24px 0">
-      <details>
-        <summary style="cursor:pointer;font-family:var(--en);font-weight:600;color:var(--teal-l);font-size:.82rem;list-style:none;display:flex;align-items:center;gap:8px;padding:4px 0">
-          📖 Read Full English Version
-        </summary>
-        <div style="margin-top:14px">
-          <p class="p-en">The Hawksbill sea turtle is listed as critically endangered, with global populations in steep decline. Given that only a small fraction of hatchlings ever survive long enough to reproduce, any loss of nesting habitat can have irreversible consequences for the species.<br><br>Today, the main pressures facing these turtles stem from intensive fishing activity and rapid coastal development. Overfishing, combined with expanding human settlements and infrastructure projects along the shoreline, threatens to fragment nesting habitats and disrupt vital life cycles — ecological damage that may take decades to repair.<br><br>Beyond their symbolic value, sea turtles are key architects of marine ecosystems. By feeding on fast-growing species such as sponges, they help maintain healthy coral reef systems and balance lower trophic levels. They spend nearly their entire lives at sea; only the females briefly come ashore to lay eggs — a vulnerable moment for an animal evolutionarily adapted to the water.<br><br>With more than 15 years of continuous conservation work already undertaken, experts believe that sustained protection and scientific monitoring can help secure the future of the Hawksbill sea turtle along Iran's southern shores — and preserve a living emblem of Bushehr's natural heritage.</p>
+      <div class="key-facts">
+        <div class="fact-item">
+          <span class="fact-icon">🦷</span>
+          <span class="fact-text" data-key="fact1">منقار باریک و عقابی‌شکل | Narrow hawk-like beak</span>
         </div>
-      </details>
-    </div>
-  </section>
-</div>
-
-<!-- ═══ DIRECTOR QUOTE ═══ -->
-<div class="wrap" style="padding-top:0;padding-bottom:0">
-  <div class="quote-block r">
-    <div class="quote-bg"></div>
-    <div class="quote-bg-img"></div>
-    <div class="quote-glow"></div>
-    <div class="quote-inner">
-      <span class="quote-mark">"</span>
-      <p class="quote-txt">
-        حفاظت از <em>لاک‌پشت منقار عقابی</em> تنها نگهداری یک گونه نیست؛ این تلاش، پاسداری از میراث طبیعی خلیج فارس و مسئولیتی است که ما در برابر نسل‌های آینده داریم. استان بوشهر با انتخاب این گونه به‌عنوان نماد حیات‌وحش خود، پیامی روشن به جهان می‌فرستد: <em>طبیعت ما، هویت ماست.</em>
-      </p>
-      <div class="quote-sig">
-        <div class="quote-avatar">🌿</div>
-        <div>
-          <div class="quote-name">عبدالرحمن مرادزاده</div>
-          <div class="quote-role">مدیر کل حفاظت محیط زیست استان بوشهر</div>
-          <div class="quote-role-en">Director General · Bushehr Province Department of Environment</div>
+        <div class="fact-item">
+          <span class="fact-icon">⚖️</span>
+          <span class="fact-text" data-key="fact2">۴۵–۷۰ کیلوگرم | 45–70 kg</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-icon">📏</span>
+          <span class="fact-text" data-key="fact3">۷۱–۸۹ سانتی‌متر | 71–89 cm carapace</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-icon">🌊</span>
+          <span class="fact-text" data-key="fact4">صخره‌های مرجانی، لاگون‌ها | Coral reefs, lagoons</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-icon">🥚</span>
+          <span class="fact-text" data-key="fact5">هر ۲–۵ سال تخم‌گذاری | Nesting every 2–5 years</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-icon">⚠️</span>
+          <span class="fact-text" data-key="fact6">در معرض خطر شدید انقراض | Critically Endangered (IUCN)</span>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ═══ TALLAB QUOTE ═══ -->
-<div class="wrap" style="padding-top:24px;padding-bottom:0">
-  <div class="quote-block-2 r">
-    <p class="qt">
-      «پایش مستمر این گونه در سواحل بوشهر، بزرگ‌ترین بانک داده زیستی لاک‌پشت‌های دریایی در کشور را شکل داده است. هر فصل تخم‌گذاری، برگی تازه از دانش ما نسبت به رفتار و مسیر مهاجرت این جانوران شگفت‌انگیز است.»
+<!-- ═══════════════════════════════════════
+     EXPERT QUOTE — TALA
+═══════════════════════════════════════ -->
+<section id="quote" aria-label="Expert Quote" class="fade-in-section">
+  <div class="quote-card">
+    <div class="quote-mark">"</div>
+
+    <p class="quote-text" id="quote-fa" data-key="quoteTala">
+      «پانزده سال پایش پیوسته در سواحل استان بوشهر نشان می‌دهد که با حفاظت علمی و مستمر، جمعیت لاک‌پشت‌های منقار عقابی می‌تواند احیا شود. هر تخم‌گذاری که ثبت می‌کنیم، یک پیروزی برای حیات‌وحش ایران است.»
     </p>
-    <div class="sig">
-      <div class="av2">🔬</div>
-      <div>
-        <div class="nm">محمد امین طلاب</div>
-        <div class="rl">
-          رئیس اداره حفاظت محیط زیست استان بوشهر
-          <span style="font-family:var(--en);font-size:.65rem;display:block;opacity:.55;direction:ltr;margin-top:2px">Head of Environmental Protection · Bushehr Province</span>
+
+    <div class="quote-divider"></div>
+
+    <div class="quote-attribution">
+      <div class="quote-avatar" id="quote-avatar">م.ط</div>
+      <div class="quote-attr-text">
+        <p class="quote-name">محمد امین طلا | Mohammad Amin Tala</p>
+        <p class="quote-role" data-key="quoteRole">رئیس اداره محیط زیست دریایی | Head of Marine Environment Office</p>
+        <p class="quote-org">اداره کل حفاظت محیط زیست استان بوشهر</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: var(--sp-4); display:flex; align-items:center; justify-content:center; gap: var(--sp-3);">
+      <div style="height:1px; width:60px; background: rgba(255,255,255,0.15);"></div>
+      <span style="font-size: 1.2rem;">🐢</span>
+      <div style="height:1px; width:60px; background: rgba(255,255,255,0.15);"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     NESTING SITES
+═══════════════════════════════════════ -->
+<section id="sites" aria-label="Nesting Sites" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--ocean-mid);" data-key="sitesTitle">زیستگاه‌های تخم‌گذاری در استان بوشهر</h2>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span>📍</span>
+      <div class="divider-line"></div>
+    </div>
+    <p class="section-subtitle" style="color: var(--text-secondary);" data-key="sitesSub">۵ زیستگاه حفاظت‌شده در سواحل خلیج فارس | 5 Protected Sites along the Persian Gulf</p>
+  </div>
+
+  <div class="sites-grid">
+    <!-- Site 1 -->
+    <article class="site-card">
+      <div class="site-card-accent"></div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div class="site-icon-num">
+            <span>🏝️</span>
+            <span class="site-num-badge">۱</span>
+          </div>
+        </div>
+        <h3 class="site-name" data-key="site1Name">جزیره نخیلو | Nakhiloo Island</h3>
+        <p class="site-desc" data-key="site1Desc">جزیره غیرمسکونی فاقد شکارگران زمینی. ساحل اصلی تخم‌گذاری در پارک ملی دیر–نخیلو. Uninhabited island free from terrestrial predators within Dayyer–Nakhiloo National Park.</p>
+        <span class="site-badge badge-green" data-key="site1Badge">پارک ملی | National Park</span>
+      </div>
+    </article>
+
+    <!-- Site 2 -->
+    <article class="site-card">
+      <div class="site-card-accent"></div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div class="site-icon-num">
+            <span>🏝️</span>
+            <span class="site-num-badge">۲</span>
+          </div>
+        </div>
+        <h3 class="site-name" data-key="site2Name">جزیره ام‌الگرم | Om-al-Gorm Island</h3>
+        <p class="site-desc" data-key="site2Desc">جزیره دور و بکر با سواحل آرام، ایده‌آل برای لانه‌گزینی. Remote pristine island with undisturbed beaches, ideal for nesting.</p>
+        <span class="site-badge badge-blue" data-key="site2Badge">منطقه حفاظت‌شده | Protected Area</span>
+      </div>
+    </article>
+
+    <!-- Site 3 -->
+    <article class="site-card">
+      <div class="site-card-accent"></div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div class="site-icon-num">
+            <span>🏝️</span>
+            <span class="site-num-badge">۳</span>
+          </div>
+        </div>
+        <h3 class="site-name" data-key="site3Name">جزیره خارک | Kharg Island</h3>
+        <p class="site-desc" data-key="site3Desc">جزیره تاریخی شمال خلیج فارس با فعالیت تخم‌گذاری مستند. Historic island in the northern Persian Gulf with documented nesting activity.</p>
+        <span class="site-badge badge-teal" data-key="site3Badge">سایت پایش | Monitoring Site</span>
+      </div>
+    </article>
+
+    <!-- Site 4 -->
+    <article class="site-card">
+      <div class="site-card-accent"></div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div class="site-icon-num">
+            <span>🏝️</span>
+            <span class="site-num-badge">۴</span>
+          </div>
+        </div>
+        <h3 class="site-name" data-key="site4Name">جزیره خارکو | Kharkoo Island</h3>
+        <p class="site-desc" data-key="site4Desc">جزیره کوچک مجاور خارک، زیستگاه مکمل برای تخم‌گذاری. Small uninhabited island adjacent to Kharg, providing supplementary nesting habitat.</p>
+        <span class="site-badge badge-teal" data-key="site4Badge">سایت پایش | Monitoring Site</span>
+      </div>
+    </article>
+
+    <!-- Site 5 -->
+    <article class="site-card">
+      <div class="site-card-accent"></div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div class="site-icon-num">
+            <span>🏖️</span>
+            <span class="site-num-badge">۵</span>
+          </div>
+        </div>
+        <h3 class="site-name" data-key="site5Name">ناحیه نای‌بند | Nai Band Area</h3>
+        <p class="site-desc" data-key="site5Desc">منطقه حفاظت‌شده ساحلی در جنوب بوشهر با سواحل فعال تخم‌گذاری. Coastal protected area in southern Bushehr with active nesting beaches.</p>
+        <span class="site-badge badge-green" data-key="site5Badge">ساحل حفاظت‌شده | Protected Coast</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="info-banner">
+    <p data-key="infoBanner">🏛️ پارک ملی دیر–نخیلو: در میانه دهه ۱۳۸۰ به پارک ملی ارتقا یافت | Dayyer–Nakhiloo National Park: Upgraded to National Park status in the mid-2000s</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONSERVATION PROGRAM
+═══════════════════════════════════════ -->
+<section id="conservation" aria-label="Conservation Program" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--sand-gold);" data-key="consTitle">برنامه حفاظت و پایش علمی</h2>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span style="color:white;">🛡️</span>
+      <div class="divider-line"></div>
+    </div>
+    <p class="section-subtitle" style="color: var(--text-muted);" data-key="consSub">Scientific Conservation & Monitoring Program</p>
+  </div>
+
+  <div class="conservation-blocks">
+    <div class="cons-block">
+      <div class="cons-icon">🔬</div>
+      <h3 class="cons-title" data-key="consBlock1Title">پایش علمی | Scientific Monitoring</h3>
+      <p class="cons-desc" data-key="consBlock1Desc">پایش سالانه در فصل تخم‌گذاری با جمع‌آوری داده‌های زیست‌سنجی و ارزیابی وضعیت سلامت در تمام ۵ زیستگاه. Annual nesting season surveys collecting biometric data and health assessments across all 5 active sites.</p>
+    </div>
+    <div class="cons-block">
+      <div class="cons-icon">🏷️</div>
+      <h3 class="cons-title" data-key="consBlock2Title">نشانه‌گذاری انفرادی | Individual Tagging</h3>
+      <p class="cons-desc" data-key="consBlock2Desc">نشانه‌گذاری با تگ فلزی بر بالچه هر لاک‌پشت. بیش از ۲۴۰۰ فرد شناسایی‌شده با بیش از ۷۰۰ مورد بازگشت. Metal flipper tags for long-term individual identification with 700+ documented return visits.</p>
+    </div>
+    <div class="cons-block">
+      <div class="cons-icon">🗄️</div>
+      <h3 class="cons-title" data-key="consBlock3Title">پایگاه داده جامع | Comprehensive Database</h3>
+      <p class="cons-desc" data-key="consBlock3Desc">ساخت پایگاه داده ۱۵ ساله برای پشتیبانی از تصمیم‌گیری علمی و راهنمای سیاست‌گذاری‌های حفاظتی. Building a 15-year database to support evidence-based conservation policy.</p>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline-section fade-in-section">
+    <h3 class="timeline-title" data-key="timelineTitle">مسیر ۱۵ ساله حفاظت | 15 Years of Conservation</h3>
+    <div class="timeline-scroll">
+      <ul class="timeline-list">
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۳۸۴ / 2005</p>
+            <p class="timeline-event" data-key="tl1">اولین اعلام منطقه حفاظت‌شده | First protected area declared</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۳۸۶ / 2007</p>
+            <p class="timeline-event" data-key="tl2">ارتقا به پارک ملی | Upgraded to National Park</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۳۸۸ / 2009</p>
+            <p class="timeline-event" data-key="tl3">آغاز برنامه نشانه‌گذاری منظم | Systematic tagging begins</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۳۹۴ / 2015</p>
+            <p class="timeline-event" data-key="tl4">ثبت هزارمین لاک‌پشت | 1,000th turtle tagged</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۳۹۹ / 2020</p>
+            <p class="timeline-event" data-key="tl5">بیش از ۲۰۰۰ لاک‌پشت در پایگاه داده | 2,000+ in database</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-dot-wrap">
+            <div class="timeline-dot"></div>
+          </div>
+          <div>
+            <p class="timeline-year">۱۴۰۴ / 2025</p>
+            <p class="timeline-event" data-key="tl6">۱۵ سال پایش بی‌وقفه | 15 years continuous monitoring</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     THREATS
+═══════════════════════════════════════ -->
+<section id="threats" aria-label="Threats to Survival" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--coral-red);" data-key="threatsTitle">تهدیدهای بقا</h2>
+    <div class="section-divider">
+      <div class="divider-line" style="background: var(--coral-red);"></div>
+      <span>⚠️</span>
+      <div class="divider-line" style="background: var(--coral-red);"></div>
+    </div>
+    <p class="section-subtitle" style="color: var(--text-secondary);" data-key="threatsSub">Threats to Survival — تهدیدات جدی که بقای این گونه را به خطر انداخته است</p>
+  </div>
+
+  <div class="threats-grid">
+    <!-- Threat 1 -->
+    <div class="threat-card critical" role="button">
+      <div class="threat-card-header" onclick="toggleThreat(this)">
+        <span class="threat-icon">🎣</span>
+        <div>
+          <p class="threat-title" data-key="threat1Title">صیادی فشرده | Intensive Fishing</p>
+          <span class="severity-badge severity-critical" data-key="threat1Sev">CRITICAL</span>
+        </div>
+        <span class="threat-expand-icon" aria-hidden="true">⌄</span>
+      </div>
+      <div class="threat-body">
+        <div class="threat-body-inner" data-key="threat1Desc">
+          صید تصادفی در تورهای ماهیگیری از اصلی‌ترین علل مرگ‌ومیر است. Accidental bycatch in fishing nets is a leading cause of Hawksbill mortality in the Persian Gulf.
+        </div>
+      </div>
+    </div>
+
+    <!-- Threat 2 -->
+    <div class="threat-card critical" role="button">
+      <div class="threat-card-header" onclick="toggleThreat(this)">
+        <span class="threat-icon">🏗️</span>
+        <div>
+          <p class="threat-title" data-key="threat2Title">توسعه ساحلی | Coastal Development</p>
+          <span class="severity-badge severity-critical" data-key="threat2Sev">CRITICAL</span>
+        </div>
+        <span class="threat-expand-icon" aria-hidden="true">⌄</span>
+      </div>
+      <div class="threat-body">
+        <div class="threat-body-inner" data-key="threat2Desc">
+          پروژه‌های عمرانی زیستگاه‌ها را تکه‌تکه می‌کند و چرخه حیاتی را مختل می‌سازد. Infrastructure projects fragment habitats and disrupt vital life cycles of nesting females.
+        </div>
+      </div>
+    </div>
+
+    <!-- Threat 3 -->
+    <div class="threat-card high" role="button">
+      <div class="threat-card-header" onclick="toggleThreat(this)">
+        <span class="threat-icon">🌡️</span>
+        <div>
+          <p class="threat-title" data-key="threat3Title">تغییرات آب‌وهوایی | Climate Change</p>
+          <span class="severity-badge severity-high" data-key="threat3Sev">HIGH</span>
+        </div>
+        <span class="threat-expand-icon" aria-hidden="true">⌄</span>
+      </div>
+      <div class="threat-body">
+        <div class="threat-body-inner" data-key="threat3Desc">
+          افزایش دما نسبت جنسی نوزادان را تغییر می‌دهد. Rising temperatures alter hatchling sex ratios, threatening long-term population balance and genetic diversity.
+        </div>
+      </div>
+    </div>
+
+    <!-- Threat 4 -->
+    <div class="threat-card high" role="button">
+      <div class="threat-card-header" onclick="toggleThreat(this)">
+        <span class="threat-icon">🗑️</span>
+        <div>
+          <p class="threat-title" data-key="threat4Title">آلودگی دریایی | Marine Pollution</p>
+          <span class="severity-badge severity-high" data-key="threat4Sev">HIGH</span>
+        </div>
+        <span class="threat-expand-icon" aria-hidden="true">⌄</span>
+      </div>
+      <div class="threat-body">
+        <div class="threat-body-inner" data-key="threat4Desc">
+          آلودگی پلاستیکی و نشت نفت لاک‌پشت‌ها را به دام می‌اندازد. Plastic pollution and oil spills entangle and fatally injure turtles throughout the Persian Gulf.
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PHOTO GALLERY
+═══════════════════════════════════════ -->
+<section id="gallery" aria-label="Photo Gallery" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--sand-gold);" data-key="galleryTitle">گالری تصویری | Photo Gallery</h2>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span>🖼️</span>
+      <div class="divider-line"></div>
+    </div>
+    <p class="section-subtitle" style="color: var(--text-muted);" data-key="gallerySub">مستندسازی از سواحل تخم‌گذاری استان بوشهر | Field Documentation from Bushehr Nesting Beaches</p>
+  </div>
+
+  <div class="gallery-grid" id="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(0)" aria-label="Gallery image 1">
+      <img src="images/gallery1.jpg" alt="بازگشت به دریا | Returning to the Sea" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal1Cap">بازگشت به دریا | Returning to the Sea</p>
+      </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(1)" aria-label="Gallery image 2">
+      <img src="images/gallery2.jpg" alt="عملیات زیست‌سنجی | Biometric Survey" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal2Cap">عملیات زیست‌سنجی | Biometric Survey</p>
+      </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(2)" aria-label="Gallery image 3">
+      <img src="images/gallery3.jpg" alt="لحظه تخم‌گذاری | Nesting Moment" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal3Cap">لحظه تخم‌گذاری | Nesting Moment</p>
+      </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(3)" aria-label="Gallery image 4">
+      <img src="images/gallery4.jpg" alt="حرکت روی ساحل | Crawling the Beach" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal4Cap">حرکت روی ساحل | Crawling the Beach</p>
+      </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(4)" aria-label="Gallery image 5">
+      <img src="images/gallery5.jpg" alt="نشانه‌گذاری فلزی | Metal Flipper Tagging" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal5Cap">نشانه‌گذاری فلزی | Metal Flipper Tagging</p>
+      </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(5)" aria-label="Gallery image 6">
+      <img src="images/gallery6.jpg" alt="شنا بر فراز مرجان | Swimming Over Coral" loading="lazy">
+      <div class="gallery-caption-overlay">
+        <p class="gallery-cap-text" data-key="gal6Cap">شنا بر فراز مرجان | Swimming Over Coral</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Close Lightbox">✕</button>
+  <div class="lightbox-inner">
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous Image">‹</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="" loading="lazy">
+    </div>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next Image">›</button>
+    <p class="lightbox-caption" id="lb-caption"></p>
+  </div>
 </div>
 
-<!-- ═══ GALLERY ═══ -->
-<div class="wrap">
-  <section class="s">
-    <div class="r">
-      <div class="overline">Photo Gallery</div>
-      <h2 class="h2">گالری تصاویر</h2>
-      <p class="h2-en">Hawksbill Sea Turtle — Persian Gulf, Bushehr Province</p>
+<!-- ═══════════════════════════════════════
+     KEY DATA
+═══════════════════════════════════════ -->
+<section id="data" aria-label="Key Conservation Data" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--ocean-mid);" data-key="dataTitle">داده‌های کلیدی | Key Conservation Data</h2>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span>📊</span>
+      <div class="divider-line"></div>
+    </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-infographic">
+      <img src="images/infographic.jpg" alt="اینفوگرافیک داده‌های حفاظتی | Conservation Data Infographic" loading="lazy">
+      <p class="data-source-tag" data-key="dataSource">منبع: اداره کل محیط زیست استان بوشهر | Source: Bushehr Province DOE</p>
     </div>
 
-    <div class="gallery-masonry r" style="margin-top:32px">
-      <div class="gitem gitem-a" onclick="lb(this)">
-        <img src="images/gallery1.jpg" alt="لاک‌پشت در حال شنا" loading="lazy">
-        <div class="gitem-overlay"><span>شنا در خلیج فارس</span></div>
+    <div class="data-stat-list">
+      <div class="data-stat-item">
+        <div class="data-num">۱۵</div>
+        <div>
+          <p class="data-label" data-key="ds1Label">سال | Years</p>
+          <p class="data-desc" data-key="ds1Desc">پایش مستمر و بی‌وقفه سواحل تخم‌گذاری | Continuous uninterrupted nesting site monitoring</p>
+        </div>
       </div>
-      <div class="gitem gitem-b" onclick="lb(this)">
-        <img src="images/gallery2.jpg" alt="لانه‌گزینی" loading="lazy">
-        <div class="gitem-overlay"><span>لانه‌گزینی در ساحل</span></div>
+      <div class="data-stat-item">
+        <div class="data-num">۲٬۴۰۰+</div>
+        <div>
+          <p class="data-label" data-key="ds2Label">لاک‌پشت | Turtles</p>
+          <p class="data-desc" data-key="ds2Desc">نشانه‌گذاری انفرادی با تگ فلزی | Individually tagged with metal flipper tags</p>
+        </div>
       </div>
-      <div class="gitem gitem-c" onclick="lb(this)">
-        <img src="images/gallery3.jpg" alt="نوزاد لاک‌پشت" loading="lazy">
-        <div class="gitem-overlay"><span>نوزادان به سوی دریا</span></div>
+      <div class="data-stat-item">
+        <div class="data-num">۷۰۰+</div>
+        <div>
+          <p class="data-label" data-key="ds3Label">بازگشت | Returns</p>
+          <p class="data-desc" data-key="ds3Desc">ثبت بازگشت به همان سواحل در سال‌های متوالی | Documented returns to same nesting beaches</p>
+        </div>
       </div>
-      <div class="gitem gitem-d" onclick="lb(this)">
-        <img src="images/gallery4.jpg" alt="مرجان‌ها" loading="lazy">
-        <div class="gitem-overlay"><span>زیستگاه مرجانی</span></div>
+      <div class="data-stat-item">
+        <div class="data-num">۳۰٪</div>
+        <div>
+          <p class="data-label" data-key="ds4Label">شناسایی | ID Rate</p>
+          <p class="data-desc" data-key="ds4Desc">شناسایی موفق از کل جمعیت ماده‌های لانه‌گزین | Successful identification rate of nesting female population</p>
+        </div>
       </div>
-      <div class="gitem gitem-e" onclick="lb(this)">
-        <img src="images/gallery5.jpg" alt="نشانه‌گذاری" loading="lazy">
-        <div class="gitem-overlay"><span>عملیات نشانه‌گذاری</span></div>
-      </div>
-      <div class="gitem gitem-f" onclick="lb(this)">
-        <img src="images/gallery6.jpg" alt="جزیره نخیلو" loading="lazy">
-        <div class="gitem-overlay"><span>جزیره نخیلو</span></div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══ INFOGRAPHIC ═══ -->
-<div class="wrap" style="padding-top:0">
-  <section class="s" style="padding-top:0">
-    <div class="r">
-      <div class="overline">Key Data</div>
-      <h2 class="h2">اینفوگرافیک آماری</h2>
-      <p class="h2-en">Key Conservation Statistics at a Glance</p>
-    </div>
-    <figure class="infowrap r" style="margin-top:32px" onclick="lb(this)">
-      <img src="images/infographic.jpg" alt="اینفوگرافیک لاک‌پشت منقار عقابی" loading="lazy">
-      <figcaption>اداره کل حفاظت محیط زیست استان بوشهر · عبدالرحمن مرادزاده، مدیر کل · محمد امین طلاب، رئیس اداره</figcaption>
-    </figure>
-  </section>
-</div>
-
-<!-- ═══ TIMELINE ═══ -->
-<div class="wrap" style="padding-top:0">
-  <section class="s" style="padding-top:0">
-    <div class="r">
-      <div class="overline">Conservation Timeline</div>
-      <h2 class="h2">سیر حفاظت</h2>
-      <p class="h2-en">From Protected Zone to National Symbol</p>
-    </div>
-
-    <div class="tl r" style="margin-top:36px">
-      <div class="tl-item">
-        <div class="tl-yr">Phase I · مرحله اول</div>
-        <h4>معرفی منطقه حفاظت‌شده</h4>
-        <p>منطقه دیر ـ نخیلو برای اولین بار با عنوان «منطقه حفاظت‌شده» به ثبت رسید</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-yr">Mid-2000s · میانه دهه ۱۳۸۰</div>
-        <h4>ارتقا به پارک ملی</h4>
-        <p>ارتقای رتبه به پارک ملی دیر ـ نخیلو، امکان مدیریت و حفاظت مؤثرتر را فراهم کرد</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-yr">15+ Years · ۱۵+ سال پایش</div>
-        <h4>پایش مستمر — ۲۴۰۰+ نشانه‌گذاری</h4>
-        <p>بیش از ۲۴۰۰ لاک‌پشت نشانه‌گذاری و بیش از ۷۰۰ بازگشت به همان ساحل مستند شده است</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-yr">Present · امروز</div>
-        <h4>نماد رسمی حیات‌وحش استان بوشهر</h4>
-        <p>به ابتکار <strong style="color:var(--teal-l)">عبدالرحمن مرادزاده</strong>، مدیر کل حفاظت محیط زیست، این گونه به نماد رسمی استان برگزیده شد</p>
+      <div class="data-stat-item">
+        <div class="data-num">۵</div>
+        <div>
+          <p class="data-label" data-key="ds5Label">زیستگاه | Sites</p>
+          <p class="data-desc" data-key="ds5Desc">نخیلو، ام‌الگرم، خارک، خارکو، نای‌بند | Nakhiloo, Om-al-Gorm, Kharg, Kharkoo, Nai Band</p>
+        </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
 
-<!-- ═══ FOOTER ═══ -->
-<footer>
-  <div class="footer-grid r">
+  <div class="data-footer-bar" data-key="dataFooter">
+    منبع: اداره کل حفاظت محیط زیست استان بوشهر | وضعیت IUCN: در معرض خطر شدید انقراض (CR) | Source: Bushehr Province DOE | IUCN Status: Critically Endangered (CR)
+  </div>
+</section>
 
-    <!-- Brand -->
-    <div class="footer-brand">
-      <span class="emoji">🐢</span>
-      <h2>لاک‌پشت منقار عقابی</h2>
-      <p>Hawksbill Sea Turtle · Eretmochelys imbricata</p>
-      <div class="org">
-        <strong>عبدالرحمن مرادزاده</strong>
-        مدیر کل حفاظت محیط زیست استان بوشهر<br>
+<!-- ═══════════════════════════════════════
+     ECOLOGICAL ROLE
+═══════════════════════════════════════ -->
+<section id="ecology" aria-label="Ecological Role" class="fade-in-section">
+  <div class="section-header">
+    <h2 class="section-title" style="color: var(--sand-gold);" data-key="ecoTitle">نقش اکولوژیک | Ecological Role</h2>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span>🌊</span>
+      <div class="divider-line"></div>
+    </div>
+  </div>
+
+  <div class="ecology-blocks">
+    <div class="eco-block">
+      <div class="eco-icon">🪸</div>
+      <h3 class="eco-title" data-key="eco1Title">کنترل اسفنج | Sponge Control</h3>
+      <p class="eco-desc" data-key="eco1Desc">با تغذیه از اسفنج‌ها از خفه شدن مرجان‌ها جلوگیری می‌کنند. By feeding on sponges, they prevent coral reefs from being smothered and maintain reef health.</p>
+    </div>
+    <div class="eco-block">
+      <div class="eco-icon">⚖️</div>
+      <h3 class="eco-title" data-key="eco2Title">تعادل زیستی | Trophic Balance</h3>
+      <p class="eco-desc" data-key="eco2Desc">به‌عنوان شکارگران میانی، تعادل شبکه غذایی دریایی را حفظ می‌کنند. As mid-trophic predators, they maintain the delicate balance of the marine food web.</p>
+    </div>
+    <div class="eco-block">
+      <div class="eco-icon">🏖️</div>
+      <h3 class="eco-title" data-key="eco3Title">مواد مغذی ساحل | Beach Nutrients</h3>
+      <p class="eco-desc" data-key="eco3Desc">تجزیه تخم‌ها مواد مغذی حیاتی به اکوسیستم ساحلی اضافه می‌کند. Decomposing nests add vital nutrients to coastal beach ecosystems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     DESIGNER CREDIT
+═══════════════════════════════════════ -->
+<section id="designer" aria-label="Website Designer" class="fade-in-section">
+  <div class="designer-card">
+    <div class="designer-divider">
+      <div class="designer-divider-line"></div>
+      <span class="designer-icon-mid">💻</span>
+      <div class="designer-divider-line"></div>
+    </div>
+
+    <p class="designer-label" data-key="designerLabel">طراح وب‌سایت | Website Designer</p>
+    <h3 class="designer-name">مهران فقیه | Mehran Faghih</h3>
+    <p class="designer-role" data-key="designerRole">طراحی و توسعه وب | Web Design & Development</p>
+
+    <div class="designer-hr"></div>
+
+    <p class="designer-info" data-key="designerInfo">
+      این وب‌سایت با هدف معرفی و حفاظت از لاک‌پشت منقار عقابی و نمایش عملکرد استان بوشهر طراحی شده است. This website was designed to introduce and protect the Hawksbill Sea Turtle and showcase Bushehr Province's conservation achievements.
+    </p>
+
+    <div class="designer-icons">
+      <span title="Ocean">🌊</span>
+      <span title="Turtle">🐢</span>
+      <span title="Nature">🌿</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer id="footer" aria-label="Footer">
+  <div class="footer-upper">
+    <div class="footer-logo-block">
+      <div class="nav-logo">
+        <span class="nav-logo-icon">🐢</span>
+        <span style="font-size: var(--fs-md);" data-key="footerOrg">اداره کل حفاظت محیط زیست استان بوشهر</span>
+      </div>
+      <p class="footer-org" data-key="footerSubOrg">
+        Bushehr Province Department of Environment<br>
         خلیج فارس — میراث طبیعی ایران<br>
-        <span style="font-family:var(--en);font-size:.72rem;color:rgba(255,255,255,.25)">
-          Persian Gulf · Bushehr Province · Iran's Natural Heritage
-        </span>
-      </div>
+        Persian Gulf — Natural Heritage of Iran
+      </p>
+      <span class="footer-iucn">● CRITICALLY ENDANGERED — در معرض خطر انقراض</span>
     </div>
 
-    <!-- Director card -->
-    <div class="footer-col">
-      <h4>Director General</h4>
-      <div class="footer-director">
-        <div class="av">🌿</div>
-        <div class="nm">عبدالرحمن مرادزاده</div>
-        <div class="rl">
-          مدیر کل حفاظت محیط زیست<br>استان بوشهر
-          <span class="rl-en">Director General<br>Bushehr Dept. of Environment</span>
-        </div>
-      </div>
+    <div class="footer-links-block">
+      <p class="footer-links-title" data-key="footerLinksTitle">پیوندهای سریع | Quick Links</p>
+      <nav class="footer-links" aria-label="Footer Navigation">
+        <a href="#hero" class="footer-link" data-key="navHome">خانه | Home</a>
+        <a href="#about" class="footer-link" data-key="navAbout">معرفی گونه | About</a>
+        <a href="#conservation" class="footer-link" data-key="navConservation">حفاظت | Conservation</a>
+        <a href="#gallery" class="footer-link" data-key="navGallery">گالری | Gallery</a>
+        <a href="#data" class="footer-link" data-key="navData">داده‌ها | Data</a>
+      </nav>
     </div>
-
-    <!-- Tallab card -->
-    <div class="footer-col">
-      <h4>Head of Office</h4>
-      <div class="footer-tallab">
-        <div class="av2">🔬</div>
-        <div class="nm">محمد امین طلاب</div>
-        <div class="rl">
-          رئیس اداره حفاظت محیط زیست<br>استان بوشهر
-          <span style="font-family:var(--en);font-size:.62rem;color:rgba(255,255,255,.3);direction:ltr;display:block;margin-top:3px">Head · Bushehr Environmental Protection</span>
-        </div>
-      </div>
-    </div>
-
   </div>
 
-  <div class="footer-bottom">
-    <span class="copy">© Bushehr Province Department of Environment · Persian Gulf · Iran</span>
-    <span class="designer">طراح: <span>مهران فقیه</span> · Designer: <span>Mehran Faghih</span></span>
+  <div class="footer-lower">
+    <p class="footer-copy" data-key="footerCopy">
+      © ۱۴۰۴ اداره کل حفاظت محیط زیست استان بوشهر — تمامی حقوق محفوظ است<br>
+      © 2025 Bushehr Province Department of Environment — All rights reserved
+    </p>
+    <p class="footer-badge">
+      <span>🐢</span>
+      <span data-key="footerBadge">حافظ لاک‌پشت منقار عقابی از ۱۳۸۸ | Protecting Hawksbills Since 2009</span>
+    </p>
   </div>
 </footer>
 
-<!-- ═══ LIGHTBOX ═══ -->
-<div class="lb" id="lb" onclick="closeLb()">
-  <button class="lb-close" onclick="closeLb()">✕</button>
-  <img src="" alt="" id="lb-img" onclick="event.stopPropagation()">
+<!-- ═══════════════════════════════════════
+     STICKY BOTTOM BAR (Mobile Only)
+═══════════════════════════════════════ -->
+<div id="sticky-bottom-bar" aria-label="Quick Actions">
+  <button class="sticky-btn" onclick="scrollToTop()" aria-label="Back to top">
+    <span class="sticky-btn-icon">🔝</span>
+    <span data-key="stickyTop">بالا</span>
+  </button>
+  <button class="sticky-lang-btn" id="sticky-lang-btn" aria-label="Toggle Language">
+    <span id="sticky-lang-text">🇬🇧 EN</span>
+  </button>
+  <button class="sticky-btn" onclick="document.getElementById('sites').scrollIntoView({behavior:'smooth'})" aria-label="Go to nesting sites">
+    <span class="sticky-btn-icon">📍</span>
+    <span data-key="stickySites">زیستگاه</span>
+  </button>
 </div>
 
-<!-- ═══════════════════════════════════════════
+</div><!-- end #main-content -->
+
+<!-- ═══════════════════════════════════════
      JAVASCRIPT
-═══════════════════════════════════════════ -->
+═══════════════════════════════════════ -->
 <script>
-/* ── Loader ── */
-window.addEventListener('load',()=>{
-  setTimeout(()=>document.getElementById('loader').classList.add('done'),1900)
-})
+document.addEventListener('DOMContentLoaded', function() {
 
-/* ── Custom Cursor ── */
-const cd = document.getElementById('cd')
-const cr = document.getElementById('cr')
-let mx=0,my=0,rx=0,ry=0
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cd.style.transform=`translate(${mx}px,${my}px)`
-})
-function animRing(){
-  rx+=(mx-rx)*.14;ry+=(my-ry)*.14;
-  cr.style.transform=`translate(${rx}px,${ry}px)`;
-  requestAnimationFrame(animRing)
-}
-animRing()
-
-/* ── Scroll Reveal ── */
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})
-},{threshold:.07,rootMargin:'0px 0px -40px 0px'})
-document.querySelectorAll('.r').forEach(el=>obs.observe(el))
-
-/* ── Counter Animation ── */
-function runCounter(el){
-  const target=parseInt(el.dataset.target)
-  const em=el.querySelector('em')
-  const suffix=em?em.outerHTML:''
-  let v=0,start=null
-  const dur=1800
-  function step(ts){
-    if(!start)start=ts
-    const p=Math.min((ts-start)/dur,1)
-    const ease=1-Math.pow(1-p,4)
-    v=Math.round(ease*target)
-    el.innerHTML=(v>=1000?v.toLocaleString():v)+suffix
-    if(p<1)requestAnimationFrame(step)
-  }
-  requestAnimationFrame(step)
-}
-const cobs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.querySelectorAll('[data-target]').forEach(runCounter)
-      cobs.unobserve(e.target)
+  // ═══════════════════════════════════════
+  // TRANSLATIONS
+  // ═══════════════════════════════════════
+  const translations = {
+    fa: {
+      navBrand: 'منقار عقابی | Hawksbill',
+      navHome: 'خانه',
+      navAbout: 'معرفی گونه',
+      navConservation: 'حفاظت',
+      navSites: 'زیستگاه‌ها',
+      navGallery: 'گالری',
+      navData: 'داده‌ها',
+      navAboutFull: 'معرفی گونه | About Species',
+      navConsFull: 'حفاظت | Conservation',
+      navSitesFull: 'زیستگاه‌ها | Nesting Sites',
+      navGalleryFull: 'گالری | Gallery',
+      navDataFull: 'داده‌ها | Data',
+      navAboutUs: 'درباره ما | About Us',
+      heroBadge: 'نماد حیات‌وحش استان بوشهر | Wildlife Symbol of Bushehr Province',
+      heroTitle: 'لاک‌پشت دریایی منقار عقابی',
+      iucnBadge: 'در معرض خطر شدید انقراض | CRITICALLY ENDANGERED',
+      heroDesc: 'گونه‌ای کهن که میلیون‌ها سال در خلیج فارس زیسته — An ancient species that has roamed the Persian Gulf for millions of years',
+      heroCta1: 'بیشتر بدانید | Learn More',
+      heroCta2: 'مشاهده گالری | View Gallery',
+      scrollLabel: 'اسکرول کنید | Scroll',
+      stat1: 'لاک‌پشت نشانه‌گذاری‌شده | Turtles Tagged',
+      stat2: 'بازگشت ثبت‌شده | Return Records',
+      stat3: 'سال پایش مستمر | Years Monitoring',
+      stat4: 'زیستگاه فعال | Active Sites',
+      stat5: 'نرخ شناسایی | ID Rate',
+      infoCap: 'اینفوگرافیک | Infographic — اداره کل محیط زیست استان بوشهر',
+      aboutTitle: 'معرفی لاک‌پشت منقار عقابی',
+      aboutP1: 'لاک‌پشت منقار عقابی (Eretmochelys imbricata) با نامش از منقار باریک و تیز شبیه به عقاب شناخته می‌شود. این گونه کهن بیش از ۱۰۰ میلیون سال است که اقیانوس‌های جهان را می‌پیماید و امروز در آستانه انقراض قرار دارد.',
+      aboutP2: 'این لاک‌پشت‌ها معماران اصلی اکوسیستم‌های مرجانی هستند. با تغذیه از اسفنج‌ها، از خفه‌شدن مرجان‌ها جلوگیری می‌کنند. تقریباً تمام عمرشان را در دریا می‌گذرانند و تنها ماده‌ها برای تخم‌گذاری به ساحل می‌آیند.',
+      fact1: 'منقار باریک و عقابی‌شکل | Narrow hawk-like beak',
+      fact2: '۴۵–۷۰ کیلوگرم | 45–70 kg',
+      fact3: '۷۱–۸۹ سانتی‌متر | 71–89 cm carapace',
+      fact4: 'صخره‌های مرجانی، لاگون‌ها | Coral reefs, lagoons',
+      fact5: 'هر ۲–۵ سال تخم‌گذاری | Nesting every 2–5 years',
+      fact6: 'در معرض خطر شدید انقراض | Critically Endangered (IUCN)',
+      quoteTala: '«پانزده سال پایش پیوسته در سواحل استان بوشهر نشان می‌دهد که با حفاظت علمی و مستمر، جمعیت لاک‌پشت‌های منقار عقابی می‌تواند احیا شود. هر تخم‌گذاری که ثبت می‌کنیم، یک پیروزی برای حیات‌وحش ایران است.»',
+      quoteRole: 'رئیس اداره محیط زیست دریایی | Head of Marine Environment Office',
+      sitesTitle: 'زیستگاه‌های تخم‌گذاری در استان بوشهر',
+      sitesSub: '۵ زیستگاه حفاظت‌شده در سواحل خلیج فارس | 5 Protected Sites',
+      site1Name: 'جزیره نخیلو | Nakhiloo Island',
+      site1Desc: 'جزیره غیرمسکونی فاقد شکارگران زمینی. ساحل اصلی تخم‌گذاری در پارک ملی دیر–نخیلو.',
+      site1Badge: 'پارک ملی | National Park',
+      site2Name: 'جزیره ام‌الگرم | Om-al-Gorm Island',
+      site2Desc: 'جزیره دور و بکر با سواحل آرام، ایده‌آل برای لانه‌گزینی.',
+      site2Badge: 'منطقه حفاظت‌شده | Protected Area',
+      site3Name: 'جزیره خارک | Kharg Island',
+      site3Desc: 'جزیره تاریخی شمال خلیج فارس با فعالیت تخم‌گذاری مستند.',
+      site3Badge: 'سایت پایش | Monitoring Site',
+      site4Name: 'جزیره خارکو | Kharkoo Island',
+      site4Desc: 'جزیره کوچک مجاور خارک، زیستگاه مکمل برای تخم‌گذاری.',
+      site4Badge: 'سایت پایش | Monitoring Site',
+      site5Name: 'ناحیه نای‌بند | Nai Band Area',
+      site5Desc: 'منطقه حفاظت‌شده ساحلی در جنوب بوشهر با سواحل فعال تخم‌گذاری.',
+      site5Badge: 'ساحل حفاظت‌شده | Protected Coast',
+      infoBanner: '🏛️ پارک ملی دیر–نخیلو: در میانه دهه ۱۳۸۰ به پارک ملی ارتقا یافت | Dayyer–Nakhiloo National Park: Upgraded to National Park status in the mid-2000s',
+      consTitle: 'برنامه حفاظت و پایش علمی',
+      consSub: 'Scientific Conservation & Monitoring Program',
+      consBlock1Title: 'پایش علمی | Scientific Monitoring',
+      consBlock1Desc: 'پایش سالانه در فصل تخم‌گذاری با جمع‌آوری داده‌های زیست‌سنجی و ارزیابی وضعیت سلامت در تمام ۵ زیستگاه.',
+      consBlock2Title: 'نشانه‌گذاری انفرادی | Individual Tagging',
+      consBlock2Desc: 'نشانه‌گذاری با تگ فلزی بر بالچه هر لاک‌پشت. بیش از ۲۴۰۰ فرد شناسایی‌شده با بیش از ۷۰۰ مورد بازگشت.',
+      consBlock3Title: 'پایگاه داده جامع | Comprehensive Database',
+      consBlock3Desc: 'ساخت پایگاه داده ۱۵ ساله برای پشتیبانی از تصمیم‌گیری علمی و راهنمای سیاست‌گذاری‌های حفاظتی.',
+      timelineTitle: 'مسیر ۱۵ ساله حفاظت | 15 Years of Conservation',
+      tl1: 'اولین اعلام منطقه حفاظت‌شده | First protected area declared',
+      tl2: 'ارتقا به پارک ملی | Upgraded to National Park',
+      tl3: 'آغاز برنامه نشانه‌گذاری منظم | Systematic tagging begins',
+      tl4: 'ثبت هزارمین لاک‌پشت | 1,000th turtle tagged',
+      tl5: 'بیش از ۲۰۰۰ لاک‌پشت در پایگاه داده | 2,000+ in database',
+      tl6: '۱۵ سال پایش بی‌وقفه | 15 years continuous monitoring',
+      threatsTitle: 'تهدیدهای بقا',
+      threatsSub: 'Threats to Survival — تهدیدات جدی که بقای این گونه را به خطر انداخته است',
+      threat1Title: 'صیادی فشرده | Intensive Fishing',
+      threat1Sev: 'CRITICAL',
+      threat1Desc: 'صید تصادفی در تورهای ماهیگیری از اصلی‌ترین علل مرگ‌ومیر است.',
+      threat2Title: 'توسعه ساحلی | Coastal Development',
+      threat2Sev: 'CRITICAL',
+      threat2Desc: 'پروژه‌های عمرانی زیستگاه‌ها را تکه‌تکه می‌کند و چرخه حیاتی را مختل می‌سازد.',
+      threat3Title: 'تغییرات آب‌وهوایی | Climate Change',
+      threat3Sev: 'HIGH',
+      threat3Desc: 'افزایش دما نسبت جنسی نوزادان را تغییر می‌دهد.',
+      threat4Title: 'آلودگی دریایی | Marine Pollution',
+      threat4Sev: 'HIGH',
+      threat4Desc: 'آلودگی پلاستیکی و نشت نفت لاک‌پشت‌ها را به دام می‌اندازد.',
+      galleryTitle: 'گالری تصویری | Photo Gallery',
+      gallerySub: 'مستندسازی از سواحل تخم‌گذاری استان بوشهر | Field Documentation',
+      gal1Cap: 'بازگشت به دریا | Returning to the Sea',
+      gal2Cap: 'عملیات زیست‌سنجی | Biometric Survey',
+      gal3Cap: 'لحظه تخم‌گذاری | Nesting Moment',
+      gal4Cap: 'حرکت روی ساحل | Crawling the Beach',
+      gal5Cap: 'نشانه‌گذاری فلزی | Metal Flipper Tagging',
+      gal6Cap: 'شنا بر فراز مرجان | Swimming Over Coral',
+      dataTitle: 'داده‌های کلیدی | Key Conservation Data',
+      dataSource: 'منبع: اداره کل محیط زیست استان بوشهر | Source: Bushehr Province DOE',
+      ds1Label: 'سال | Years',
+      ds1Desc: 'پایش مستمر و بی‌وقفه سواحل تخم‌گذاری',
+      ds2Label: 'لاک‌پشت | Turtles',
+      ds2Desc: 'نشانه‌گذاری انفرادی با تگ فلزی',
+      ds3Label: 'بازگشت | Returns',
+      ds3Desc: 'ثبت بازگشت به همان سواحل در سال‌های متوالی',
+      ds4Label: 'شناسایی | ID Rate',
+      ds4Desc: 'شناسایی موفق از کل جمعیت ماده‌های لانه‌گزین',
+      ds5Label: 'زیستگاه | Sites',
+      ds5Desc: 'نخیلو، ام‌الگرم، خارک، خارکو، نای‌بند',
+      dataFooter: 'منبع: اداره کل حفاظت محیط زیست استان بوشهر | وضعیت IUCN: در معرض خطر شدید انقراض (CR)',
+      ecoTitle: 'نقش اکولوژیک | Ecological Role',
+      eco1Title: 'کنترل اسفنج | Sponge Control',
+      eco1Desc: 'با تغذیه از اسفنج‌ها از خفه شدن مرجان‌ها جلوگیری می‌کنند.',
+      eco2Title: 'تعادل زیستی | Trophic Balance',
+      eco2Desc: 'به‌عنوان شکارگران میانی، تعادل شبکه غذایی دریایی را حفظ می‌کنند.',
+      eco3Title: 'مواد مغذی ساحل | Beach Nutrients',
+      eco3Desc: 'تجزیه تخم‌ها مواد مغذی حیاتی به اکوسیستم ساحلی اضافه می‌کند.',
+      designerLabel: 'طراح وب‌سایت | Website Designer',
+      designerRole: 'طراحی و توسعه وب | Web Design & Development',
+      designerInfo: 'این وب‌سایت با هدف معرفی و حفاظت از لاک‌پشت منقار عقابی و نمایش عملکرد استان بوشهر طراحی شده است.',
+      footerOrg: 'اداره کل حفاظت محیط زیست استان بوشهر',
+      footerSubOrg: 'Bushehr Province Department of Environment\nخلیج فارس — میراث طبیعی ایران\nPersian Gulf — Natural Heritage of Iran',
+      footerLinksTitle: 'پیوندهای سریع | Quick Links',
+      footerCopy: '© ۱۴۰۴ اداره کل حفاظت محیط زیست استان بوشهر — تمامی حقوق محفوظ است\n© 2025 Bushehr Province Department of Environment — All rights reserved',
+      footerBadge: 'حافظ لاک‌پشت منقار عقابی از ۱۳۸۸ | Protecting Hawksbills Since 2009',
+      stickyTop: 'بالا',
+      stickySites: 'زیستگاه',
+    },
+    en: {
+      navBrand: 'Hawksbill | منقار عقابی',
+      navHome: 'Home',
+      navAbout: 'About Species',
+      navConservation: 'Conservation',
+      navSites: 'Nesting Sites',
+      navGallery: 'Gallery',
+      navData: 'Data',
+      navAboutFull: 'About Species | معرفی گونه',
+      navConsFull: 'Conservation | حفاظت',
+      navSitesFull: 'Nesting Sites | زیستگاه‌ها',
+      navGalleryFull: 'Gallery | گالری',
+      navDataFull: 'Data | داده‌ها',
+      navAboutUs: 'About Us | درباره ما',
+      heroBadge: 'Wildlife Symbol of Bushehr Province | نماد حیات‌وحش استان بوشهر',
+      heroTitle: 'Hawksbill Sea Turtle',
+      iucnBadge: 'CRITICALLY ENDANGERED | در معرض خطر شدید انقراض',
+      heroDesc: 'An ancient species that has roamed the Persian Gulf for millions of years — گونه‌ای کهن از خلیج فارس',
+      heroCta1: 'Learn More | بیشتر بدانید',
+      heroCta2: 'View Gallery | مشاهده گالری',
+      scrollLabel: 'Scroll | اسکرول',
+      stat1: 'Turtles Tagged | لاک‌پشت نشانه‌گذاری‌شده',
+      stat2: 'Return Records | بازگشت ثبت‌شده',
+      stat3: 'Years Monitoring | سال پایش',
+      stat4: 'Active Sites | زیستگاه فعال',
+      stat5: 'ID Rate | نرخ شناسایی',
+      infoCap: 'Infographic | اینفوگرافیک — Bushehr Province DOE',
+      aboutTitle: 'About the Hawksbill Sea Turtle',
+      aboutP1: "Named for its distinctive narrow, pointed beak resembling a hawk's bill, the Hawksbill Sea Turtle (Eretmochelys imbricata) has navigated the world's oceans for over 100 million years. Today, it stands on the brink of extinction.",
+      aboutP2: 'Hawksbills are key architects of coral reef ecosystems. By feeding on sponges, they prevent coral suffocation. They spend nearly their entire lives at sea; only females briefly come ashore to nest.',
+      fact1: 'Narrow hawk-like beak | منقار باریک عقابی‌شکل',
+      fact2: '45–70 kg | ۴۵–۷۰ کیلوگرم',
+      fact3: '71–89 cm carapace | ۷۱–۸۹ سانتی‌متر',
+      fact4: 'Coral reefs, lagoons | صخره‌های مرجانی',
+      fact5: 'Nesting every 2–5 years | هر ۲–۵ سال',
+      fact6: 'Critically Endangered (IUCN) | در معرض خطر شدید',
+      quoteTala: '"Fifteen years of continuous monitoring along Bushehr\'s coastlines demonstrates that with scientific and sustained conservation, Hawksbill populations can recover. Every nesting event we document is a victory for Iran\'s wildlife."',
+      quoteRole: 'Head of Marine Environment Office | رئیس اداره محیط زیست دریایی',
+      sitesTitle: 'Nesting Sites in Bushehr Province',
+      sitesSub: '5 Protected Sites along the Persian Gulf | ۵ زیستگاه حفاظت‌شده',
+      site1Name: 'Nakhiloo Island | جزیره نخیلو',
+      site1Desc: 'Uninhabited island free from terrestrial predators. Primary nesting beach within Dayyer–Nakhiloo National Park.',
+      site1Badge: 'National Park | پارک ملی',
+      site2Name: 'Om-al-Gorm Island | جزیره ام‌الگرم',
+      site2Desc: 'Remote pristine island with undisturbed beaches, ideal for nesting.',
+      site2Badge: 'Protected Area | منطقه حفاظت‌شده',
+      site3Name: 'Kharg Island | جزیره خارک',
+      site3Desc: 'Historic island in the northern Persian Gulf with documented nesting activity.',
+      site3Badge: 'Monitoring Site | سایت پایش',
+      site4Name: 'Kharkoo Island | جزیره خارکو',
+      site4Desc: 'Small uninhabited island adjacent to Kharg, providing supplementary nesting habitat.',
+      site4Badge: 'Monitoring Site | سایت پایش',
+      site5Name: 'Nai Band Area | ناحیه نای‌بند',
+      site5Desc: 'Coastal protected area in southern Bushehr with active nesting beaches.',
+      site5Badge: 'Protected Coast | ساحل حفاظت‌شده',
+      infoBanner: '🏛️ Dayyer–Nakhiloo National Park: Upgraded to National Park status in the mid-2000s | پارک ملی دیر–نخیلو',
+      consTitle: 'Scientific Conservation & Monitoring Program',
+      consSub: 'برنامه حفاظت و پایش علمی',
+      consBlock1Title: 'Scientific Monitoring | پایش علمی',
+      consBlock1Desc: 'Annual nesting season surveys collecting biometric data and health assessments across all 5 active nesting sites.',
+      consBlock2Title: 'Individual Tagging | نشانه‌گذاری انفرادی',
+      consBlock2Desc: 'Metal flipper tags applied for long-term individual identification. Over 2,400 turtles tagged with 700+ documented return visits.',
+      consBlock3Title: 'Comprehensive Database | پایگاه داده جامع',
+      consBlock3Desc: 'Building a 15-year database to support evidence-based decision-making and guide future conservation policy.',
+      timelineTitle: '15 Years of Conservation | مسیر ۱۵ ساله حفاظت',
+      tl1: 'First protected area declared | اولین اعلام منطقه حفاظت‌شده',
+      tl2: 'Upgraded to National Park | ارتقا به پارک ملی',
+      tl3: 'Systematic tagging begins | آغاز برنامه نشانه‌گذاری',
+      tl4: '1,000th turtle tagged | ثبت هزارمین لاک‌پشت',
+      tl5: '2,000+ in database | بیش از ۲۰۰۰ لاک‌پشت',
+      tl6: '15 years continuous monitoring | ۱۵ سال پایش بی‌وقفه',
+      threatsTitle: 'Threats to Survival',
+      threatsSub: 'تهدیدهای بقا — Critical threats endangering this species',
+      threat1Title: 'Intensive Fishing | صیادی فشرده',
+      threat1Sev: 'CRITICAL',
+      threat1Desc: 'Accidental bycatch in fishing nets is a leading cause of Hawksbill mortality in the Persian Gulf.',
+      threat2Title: 'Coastal Development | توسعه ساحلی',
+      threat2Sev: 'CRITICAL',
+      threat2Desc: 'Infrastructure projects fragment habitats and disrupt vital life cycles of nesting females.',
+      threat3Title: 'Climate Change | تغییرات آب‌وهوایی',
+      threat3Sev: 'HIGH',
+      threat3Desc: 'Rising temperatures alter hatchling sex ratios, threatening long-term population balance.',
+      threat4Title: 'Marine Pollution | آلودگی دریایی',
+      threat4Sev: 'HIGH',
+      threat4Desc: 'Plastic pollution and oil spills entangle and fatally injure turtles throughout the Persian Gulf.',
+      galleryTitle: 'Photo Gallery | گالری تصویری',
+      gallerySub: 'Field Documentation from Bushehr Nesting Beaches | مستندسازی',
+      gal1Cap: 'Returning to the Sea | بازگشت به دریا',
+      gal2Cap: 'Biometric Survey | عملیات زیست‌سنجی',
+      gal3Cap: 'Nesting Moment | لحظه تخم‌گذاری',
+      gal4Cap: 'Crawling the Beach | حرکت روی ساحل',
+      gal5Cap: 'Metal Flipper Tagging | نشانه‌گذاری فلزی',
+      gal6Cap: 'Swimming Over Coral | شنا بر فراز مرجان',
+      dataTitle: 'Key Conservation Data | داده‌های کلیدی',
+      dataSource: 'Source: Bushehr Province DOE | منبع: اداره کل محیط زیست',
+      ds1Label: 'Years | سال',
+      ds1Desc: 'Continuous uninterrupted nesting site monitoring',
+      ds2Label: 'Turtles | لاک‌پشت',
+      ds2Desc: 'Individually tagged with metal flipper tags',
+      ds3Label: 'Returns | بازگشت',
+      ds3Desc: 'Documented returns to same nesting beaches',
+      ds4Label: 'ID Rate | شناسایی',
+      ds4Desc: 'Successful identification of total nesting female population',
+      ds5Label: 'Sites | زیستگاه',
+      ds5Desc: 'Nakhiloo, Om-al-Gorm, Kharg, Kharkoo, Nai Band',
+      dataFooter: 'Source: Bushehr Province DOE | IUCN Status: Critically Endangered (CR)',
+      ecoTitle: 'Ecological Role | نقش اکولوژیک',
+      eco1Title: 'Sponge Control | کنترل اسفنج',
+      eco1Desc: 'By feeding on sponges, they prevent coral reefs from being smothered and maintain reef health.',
+      eco2Title: 'Trophic Balance | تعادل زیستی',
+      eco2Desc: 'As mid-trophic predators, they maintain the delicate balance of the marine food web.',
+      eco3Title: 'Beach Nutrients | مواد مغذی ساحل',
+      eco3Desc: 'Decomposing nests add vital nutrients to coastal beach ecosystems.',
+      designerLabel: 'Website Designer | طراح وب‌سایت',
+      designerRole: 'Web Design & Development | طراحی و توسعه وب',
+      designerInfo: 'This website was designed to introduce and protect the Hawksbill Sea Turtle and showcase Bushehr Province\'s conservation achievements.',
+      footerOrg: 'Bushehr Province Department of Environment',
+      footerSubOrg: 'اداره کل حفاظت محیط زیست استان بوشهر\nخلیج فارس — میراث طبیعی ایران\nPersian Gulf — Natural Heritage of Iran',
+      footerLinksTitle: 'Quick Links | پیوندهای سریع',
+      footerCopy: '© 2025 Bushehr Province Department of Environment — All rights reserved\n© ۱۴۰۴ اداره کل حفاظت محیط زیست استان بوشهر',
+      footerBadge: 'Protecting Hawksbills Since 2009 | حافظ لاک‌پشت از ۱۳۸۸',
+      stickyTop: 'Top',
+      stickySites: 'Sites',
     }
-  })
-},{threshold:.3})
-document.querySelectorAll('.stats-inner').forEach(el=>cobs.observe(el))
+  };
 
-/* ── Lightbox ── */
-function lb(el){
-  const img=el.tagName==='IMG'?el:el.querySelector('img')
-  document.getElementById('lb-img').src=img.src
-  document.getElementById('lb').classList.add('open')
-  document.body.style.overflow='hidden'
-}
-function closeLb(){
-  document.getElementById('lb').classList.remove('open')
-  document.body.style.overflow=''
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()})
+  // ═══════════════════════════════════════
+  // LANGUAGE SYSTEM
+  // ═══════════════════════════════════════
+  let currentLang = localStorage.getItem('hawksbill-lang') || 'fa';
 
-/* ── Language ── */
-function setLang(l){
-  document.getElementById('btn-fa').classList.toggle('on',l==='fa')
-  document.getElementById('btn-en').classList.toggle('on',l==='en')
-  document.querySelectorAll('[data-fa][data-en]').forEach(el=>{
-    el.textContent=l==='fa'?el.dataset.fa:el.dataset.en
-  })
-  document.querySelectorAll('.p-fa,.badge.fa').forEach(el=>{
-    el.style.display=l==='en'?'none':''
-  })
-  document.querySelectorAll('.p-en,.badge.en').forEach(el=>{
-    el.style.display=l==='fa'?'none':''
-  })
-}
+  function applyLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('hawksbill-lang', lang);
 
-/* ── Parallax hero image ── */
-window.addEventListener('scroll',()=>{
-  const hero=document.querySelector('.hero-img')
-  if(hero){
-    const y=window.scrollY
-    hero.style.transform=`scale(1.08) translateY(${y*.25}px)`
+    const html = document.documentElement;
+    html.lang = lang;
+    html.dir = (lang === 'fa') ? 'rtl' : 'ltr';
+
+    document.body.classList.toggle('en-active', lang === 'en');
+
+    // Update all data-key elements
+    const t = translations[lang];
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.getAttribute('data-key');
+      if (t[key] !== undefined) {
+        el.textContent = t[key];
+      }
+    });
+
+    // Update language toggle buttons
+    const langDisplay = (lang === 'fa') ? '🇬🇧 English' : '🇮🇷 فارسی';
+    const stickyDisplay = (lang === 'fa') ? '🇬🇧 EN' : '🇮🇷 FA';
+
+    const navLangText = document.getElementById('nav-lang-text');
+    const menuLangText = document.getElementById('menu-lang-text');
+    const stickyLangText = document.getElementById('sticky-lang-text');
+
+    if (navLangText) navLangText.textContent = langDisplay;
+    if (menuLangText) menuLangText.textContent = langDisplay;
+    if (stickyLangText) stickyLangText.textContent = stickyDisplay;
+
+    // Update loading screen texts
+    const loadTitleFa = document.getElementById('load-title-fa');
+    const loadTitleEn = document.getElementById('load-title-en');
+    const welcomeMsgFa = document.getElementById('welcome-msg-fa');
+    const welcomeMsgEn = document.getElementById('welcome-msg-en');
+    const enterBtnText = document.getElementById('enter-btn-text');
+    const loadAvatar = document.getElementById('load-avatar');
+    const loadTitleAttr = document.getElementById('load-title-attr');
+    const quoteAvatar = document.getElementById('quote-avatar');
+
+    if (lang === 'en') {
+      if (loadTitleFa) loadTitleFa.style.display = 'none';
+      if (loadTitleEn) loadTitleEn.style.display = 'block';
+      if (welcomeMsgFa) welcomeMsgFa.style.display = 'none';
+      if (welcomeMsgEn) welcomeMsgEn.style.display = 'block';
+      if (enterBtnText) enterBtnText.textContent = 'Enter Website';
+      if (loadAvatar) loadAvatar.textContent = 'A.M';
+      if (loadTitleAttr) loadTitleAttr.textContent = 'Director General, Bushehr Province Dept. of Environment';
+      if (quoteAvatar) quoteAvatar.textContent = 'M.T';
+    } else {
+      if (loadTitleFa) loadTitleFa.style.display = 'block';
+      if (loadTitleEn) loadTitleEn.style.display = 'block';
+      if (welcomeMsgFa) welcomeMsgFa.style.display = 'block';
+      if (welcomeMsgEn) welcomeMsgEn.style.display = 'none';
+      if (enterBtnText) enterBtnText.textContent = 'ورود به سایت';
+      if (loadAvatar) loadAvatar.textContent = 'ع.م';
+      if (loadTitleAttr) loadTitleAttr.textContent = 'مدیرکل حفاظت محیط زیست استان بوشهر';
+      if (quoteAvatar) quoteAvatar.textContent = 'م.ط';
+    }
   }
-})
+
+  function toggleLanguage() {
+    const newLang = (currentLang === 'fa') ? 'en' : 'fa';
+    document.body.classList.add('lang-transition');
+    setTimeout(() => {
+      applyLanguage(newLang);
+      document.body.classList.remove('lang-transition');
+      document.body.style.opacity = '1';
+    }, 150);
+  }
+
+  // Apply initial language
+  applyLanguage(currentLang);
+
+  // Language toggle buttons
+  const navLangBtn = document.getElementById('nav-lang-btn');
+  const menuLangBtn = document.getElementById('menu-lang-btn');
+  const stickyLangBtn = document.getElementById('sticky-lang-btn');
+
+  if (navLangBtn) navLangBtn.addEventListener('click', toggleLanguage);
+  if (menuLangBtn) menuLangBtn.addEventListener('click', toggleLanguage);
+  if (stickyLangBtn) stickyLangBtn.addEventListener('click', toggleLanguage);
+
+  // ═══════════════════════════════════════
+  // LOADING SCREEN — PHASE A & B
+  // ═══════════════════════════════════════
+  const loadingScreen = document.getElementById('loading-screen');
+  const phaseA = document.getElementById('phase-a');
+  const phaseB = document.getElementById('phase-b');
+  const progressFill = document.getElementById('progress-fill');
+  const progressText = document.getElementById('progress-text');
+  const enterBtn = document.getElementById('enter-btn');
+  const mainContent = document.getElementById('main-content');
+
+  // Animate progress bar
+  let progressValue = 0;
+  const progressInterval = setInterval(() => {
+    progressValue += 2;
+    if (progressValue > 100) progressValue = 100;
+
+    progressFill.style.width = progressValue + '%';
+
+    if (currentLang === 'fa') {
+      // Convert to Persian digits
+      const persianDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+      const pVal = String(progressValue).split('').map(d => /\d/.test(d) ? persianDigits[parseInt(d)] : d).join('');
+      progressText.textContent = pVal + '٪';
+    } else {
+      progressText.textContent = progressValue + '%';
+    }
+
+    if (progressValue >= 100) clearInterval(progressInterval);
+  }, 25);
+
+  // Phase A → Phase B transition after 2.5s
+  setTimeout(() => {
+    phaseA.classList.add('hidden');
+    setTimeout(() => {
+      phaseA.style.display = 'none';
+      phaseB.style.display = 'block';
+    }, 500);
+  }, 2500);
+
+  // Enter button — dismiss loading screen
+  function dismissLoading() {
+    loadingScreen.classList.add('hidden');
+    mainContent.style.opacity = '1';
+    setTimeout(() => {
+      loadingScreen.style.display = 'none';
+    }, 600);
+  }
+
+  if (enterBtn) {
+    enterBtn.addEventListener('click', dismissLoading);
+  }
+
+  // ═══════════════════════════════════════
+  // HAMBURGER MENU
+  // ═══════════════════════════════════════
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    hamburger.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+  }
+
+  // Close menu on nav item click
+  document.querySelectorAll('[data-menu-item]').forEach(item => {
+    item.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+      closeLightbox();
+    }
+  });
+
+  // ═══════════════════════════════════════
+  // NAVBAR — SCROLL BEHAVIOR
+  // ═══════════════════════════════════════
+  const navbar = document.getElementById('navbar');
+  const progressBar = document.getElementById('progress-bar');
+
+  function updateScroll() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+    // Progress bar
+    progressBar.style.width = scrollPercent + '%';
+    progressBar.setAttribute('aria-valuenow', Math.round(scrollPercent));
+
+    // Navbar shrink
+    if (scrollTop > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Parallax hero
+    const heroBg = document.getElementById('hero-bg');
+    if (heroBg && scrollTop < window.innerHeight) {
+      heroBg.style.transform = 'translateY(' + (scrollTop * 0.3) + 'px)';
+    }
+  }
+
+  window.addEventListener('scroll', updateScroll, { passive: true });
+
+  // ═══════════════════════════════════════
+  // BACK TO TOP
+  // ═══════════════════════════════════════
+  window.scrollToTop = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // ═══════════════════════════════════════
+  // INTERSECTION OBSERVER — FADE-IN SECTIONS
+  // ═══════════════════════════════════════
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in-section').forEach(el => {
+    fadeObserver.observe(el);
+  });
+
+  // ═══════════════════════════════════════
+  // STATS COUNT-UP — INTERSECTION OBSERVER
+  // ═══════════════════════════════════════
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsSection = document.getElementById('stats');
+  if (statsSection) statsObserver.observe(statsSection);
+
+  function animateCounters() {
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.getAttribute('data-count'));
+      const suffix = el.getAttribute('data-suffix') || '';
+      const duration = 1800;
+      const start = performance.now();
+
+      function update(time) {
+        const elapsed = time - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        const current = Math.floor(eased * target);
+
+        // Convert to Persian digits if fa
+        if (currentLang === 'fa') {
+          const persianDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+          const pNum = String(current).replace(/\d/g, d => persianDigits[parseInt(d)]);
+          const pSuffix = suffix.replace(/\+/g, '+').replace(/%/, '٪').replace(/٪/, '٪');
+          el.textContent = pNum + (suffix === '%' ? '٪' : suffix === '٪' ? '٪' : suffix);
+        } else {
+          el.textContent = current + suffix;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          if (currentLang === 'fa') {
+            const persianDigits = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+            const pNum = String(target).replace(/\d/g, d => persianDigits[parseInt(d)]);
+            el.textContent = pNum + (suffix === '%' ? '٪' : suffix === '٪' ? '٪' : suffix);
+          } else {
+            el.textContent = target + suffix;
+          }
+        }
+      }
+      requestAnimationFrame(update);
+    });
+  }
+
+  // ═══════════════════════════════════════
+  // THREAT ACCORDION
+  // ═══════════════════════════════════════
+  window.toggleThreat = function(header) {
+    const card = header.closest('.threat-card');
+    const isOpen = card.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.threat-card').forEach(c => c.classList.remove('open'));
+
+    // Toggle current
+    if (!isOpen) {
+      card.classList.add('open');
+    }
+  };
+
+  // ═══════════════════════════════════════
+  // GALLERY LIGHTBOX
+  // ═══════════════════════════════════════
+  const galleryImages = [
+    { src: 'images/gallery1.jpg', fa: 'بازگشت به دریا', en: 'Returning to the Sea' },
+    { src: 'images/gallery2.jpg', fa: 'عملیات زیست‌سنجی', en: 'Biometric Survey' },
+    { src: 'images/gallery3.jpg', fa: 'لحظه تخم‌گذاری', en: 'Nesting Moment' },
+    { src: 'images/gallery4.jpg', fa: 'حرکت روی ساحل', en: 'Crawling the Beach' },
+    { src: 'images/gallery5.jpg', fa: 'نشانه‌گذاری فلزی', en: 'Metal Flipper Tagging' },
+    { src: 'images/gallery6.jpg', fa: 'شنا بر فراز مرجان', en: 'Swimming Over Coral' },
+  ];
+
+  let currentLbIndex = 0;
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lb-caption');
+  const lbClose = document.getElementById('lb-close');
+  const lbPrev = document.getElementById('lb-prev');
+  const lbNext = document.getElementById('lb-next');
+
+  window.openLightbox = function(index) {
+    currentLbIndex = index;
+    updateLightbox();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function updateLightbox() {
+    const img = galleryImages[currentLbIndex];
+    lbImg.src = img.src;
+    lbImg.alt = img.fa + ' | ' + img.en;
+    lbCaption.textContent = (currentLang === 'fa')
+      ? img.fa + ' | ' + img.en
+      : img.en + ' | ' + img.fa;
+  }
+
+  function prevImage() {
+    currentLbIndex = (currentLbIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+  }
+
+  function nextImage() {
+    currentLbIndex = (currentLbIndex + 1) % galleryImages.length;
+    updateLightbox();
+  }
+
+  if (lbClose) lbClose.addEventListener('click', closeLightbox);
+  if (lbPrev) lbPrev.addEventListener('click', prevImage);
+  if (lbNext) lbNext.addEventListener('click', nextImage);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') {
+      document.documentElement.dir === 'rtl' ? nextImage() : prevImage();
+    } else if (e.key === 'ArrowRight') {
+      document.documentElement.dir === 'rtl' ? prevImage() : nextImage();
+    } else if (e.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+
+  // Close on outside click
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Touch swipe for lightbox
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  lightbox.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    const delta = touchEndX - touchStartX;
+    const threshold = 50;
+
+    if (Math.abs(delta) > threshold) {
+      if (document.documentElement.dir === 'rtl') {
+        if (delta > 0) prevImage(); else nextImage();
+      } else {
+        if (delta < 0) nextImage(); else prevImage();
+      }
+    }
+  }, { passive: true });
+
+  // ═══════════════════════════════════════
+  // ACTIVE NAV LINK ON SCROLL
+  // ═══════════════════════════════════════
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.desktop-nav-link');
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + entry.target.id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '-70px 0px 0px 0px' });
+
+  sections.forEach(sec => navObserver.observe(sec));
+
+}); // End DOMContentLoaded
 </script>
 </body>
 </html>
